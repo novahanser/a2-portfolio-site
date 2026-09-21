@@ -313,7 +313,7 @@ window.portfolioProjects = {
     "contribution": "I completed the animation and finishing study individually. My work covered motion direction, review, screen removal and colour cleanup. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
     "record": [
       "The player contains the final 2160 × 2982, 60 fps black-background MP4: 598 frames, 9.966667 seconds, no audio. It is an unchanged copy of the delivered file, not a transparent video.",
-      "The executed generation API records seed 1005113135037086, a 672 × 928 base, 2× latent upscaling and 1344 × 1856 generated output. Generation produced 243 frames at 24 fps; the delivered video belongs to a later post-production stage.",
+      "The executed generation API records seed 1005113135037086, a 672 × 928 base, 2× latent upscaling and 1344 × 1856 generated output. Generation produced 243 frames at 24 fps. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving 240 frames and exactly 10 seconds at 24 fps before further post-production. The final 60 fps delivery comes from a later processing stage.",
       "After CorridorKey screen removal, a local mask targeted the violet cloak. The approved correction used spill_luma 0.36; the review aimed to match the surrounding cloth rather than whiten the affected area. The transparent ProRes master was then composited on black.",
       "The generation workflow alone does not reproduce the complete final composite. The two stills are frames from the delivered video, not a before-and-after cleanup comparison."
     ],
@@ -405,7 +405,7 @@ window.portfolioProjects = {
       "The player uses the final 1600 × 1600 MP4: 240 frames at 24 fps, 10 seconds, no audio. It was composited from the later 1600-size transparent master, not the older 2160-size cleanup.",
       "The original generation API records seed 322853979834763, 20 steps, Split Sigmas 6 and 2× upscaling from 800 × 800. Legacy filenames include a different seed and a 1.6× label; those names are not the executed values.",
       "CorridorKey processing was adapted for the red screen. Local red-spill cleanup covered selected areas including the arm-side fabric, sword handle and eye ornament. A separate protected forehead repair was included before the transparent master was exported.",
-      "The generated source had 243 frames; the later input used for keying had 240. I used Adobe After Effects (AE) to fine-tune the loop animation in post-production. The saved records do not identify the exact edit between those files. Both stills come from the displayed final composite."
+      "The generated source had 243 frames. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving a 240-frame clip lasting exactly 10 seconds at 24 fps for keying. Both stills come from the displayed final composite."
     ],
     "specs": [
       [
@@ -493,7 +493,7 @@ window.portfolioProjects = {
     "contribution": "I completed the animation and finishing study individually. My work covered motion direction, review, screen removal and colour cleanup. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
     "record": [
       "The displayed final MP4 is 2160 × 2880, 24 fps and 240 frames: 10 seconds, with no audio. Its black background is baked into the picture; the transparent ProRes master is retained separately.",
-      "The actual generation API records seed 603730895876546, a 672 × 896 base and 2× latent upscaling to 1344 × 1792. The older seed in the source filename does not identify the executed run. Original generation was 243 frames at 24 fps.",
+      "The actual generation API records seed 603730895876546, a 672 × 896 base and 2× latent upscaling to 1344 × 1792. The older seed in the source filename does not identify the executed run. Original generation was 243 frames at 24 fps. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving 240 frames and exactly 10 seconds at 24 fps.",
       "CorridorKey screen removal was followed by a mild global green-spill pass with strength 0.9 and warm-colour protection 0.95. The cloak mask from Insight (Nullified) and local repairs from Saya (Absolution) were not applied to Mimu.",
       "The final black composite was prepared from the transparent master using linear-light alpha compositing. These images are timecoded frames of that final file, not separate iterations."
     ],

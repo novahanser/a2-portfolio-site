@@ -21,6 +21,8 @@ Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black
 
 ## Later production stage
 
+The creator confirmed that Adobe After Effects (AE) was used to fine-tune the loop and remove three frames from the 243-frame source, leaving 240 frames and exactly 10 seconds at 24 fps before subsequent processing.
+
 The later 2160 x 2880, 240-frame input was keyed with CorridorKey, followed by mild global green-spill cleanup. The transparent master was composited over black in linear light for 10 Mbps H.264 delivery.
 
 Delivered media: 2160 x 2880 / 24 fps / 240 frames / 10 s. No audio; black background baked into MP4.
@@ -29,4 +31,4 @@ Delivered media: 2160 x 2880 / 24 fps / 240 frames / 10 s. No audio; black backg
 
 The filename seed197875471725214 is a legacy label. The actual execution seed is 603730895876546. The UI and API supplied in the handoff were preserved byte-for-byte.
 
-The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. Original illustration authorship and permission details remain to be confirmed. No new generation or reprocessing was run when preparing these website evidence assets.
+The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. The source illustration is Mimu from CHUNITHM, credited to 煎茶 (Sencha) on SEGA’s official character page. See the [source and attribution notes](../source-notes.md) for supporting links; those credits do not establish a reuse licence. No new generation or reprocessing was run when preparing these website evidence assets.

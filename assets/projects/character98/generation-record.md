@@ -20,6 +20,8 @@ Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black
 
 ## Later production stage
 
+The creator confirmed that Adobe After Effects (AE) was used to fine-tune the loop and remove three frames from the 243-frame source, leaving 240 frames and exactly 10 seconds at 24 fps before subsequent processing.
+
 CorridorKey green-screen removal, then local purple-cloak cleanup (spill_luma 0.36). The final transparent master is 2160 x 2982 at 60 fps. Linear-light black compositing and 10 Mbps H.264 delivery followed.
 
 Delivered media: 2160 x 2982 / 60 fps / 598 frames / 9.966667 s. No audio; black background baked into MP4.
@@ -28,4 +30,4 @@ Delivered media: 2160 x 2982 / 60 fps / 598 frames / 9.966667 s. No audio; black
 
 The saved standalone v5 UI seed differs from the actual output. The embedded API is the parameter authority. The original prompt is preserved without editorial changes.
 
-The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. Original illustration authorship and permission details remain to be confirmed. No new generation or reprocessing was run when preparing these website evidence assets.
+The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. The source illustration is Insight (Nullified) from Arcaea, credited to すずなし (Suzunashi) by the Japanese community wiki. See the [source and attribution notes](../source-notes.md) for supporting links; those credits do not establish a reuse licence. No new generation or reprocessing was run when preparing these website evidence assets.

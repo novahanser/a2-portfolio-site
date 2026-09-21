@@ -80,7 +80,7 @@ The 98 and 97 UI/API records were extracted from the original generated PNG meta
 
 The diagrams cover generation. CorridorKey screen removal, colour cleanup and final compositing occurred afterwards. For 98, a local violet-cloak correction used spill_luma 0.36. The displayed 97 uses the later 1600 × 1600 source and master, including local red-spill cleanup and forehead protection; the earlier 2160-size master is not the displayed version. Mimu uses gentle global green-spill cleanup. Final black compositing was calculated in linear light before encoding.
 
-The delivery reports confirm the specified output conditions, not lossless quality. The 98 and Mimu deliveries did not meet every preferred numerical image-quality threshold at the chosen dimensions and bitrate. For Saya (Absolution), the generated source had 243 frames and the later keying input had 240. The creator confirmed AE loop adjustments in post-production; the saved records do not identify the exact edit between those two files.
+The delivery reports confirm the specified output conditions, not lossless quality. The 98 and Mimu deliveries did not meet every preferred numerical image-quality threshold at the chosen dimensions and bitrate. For Saya (Absolution), Mimu and Insight (Nullified), the creator confirmed that Adobe After Effects (AE) was used to fine-tune each loop and remove three frames from each 243-frame generation. Each edited clip contains 240 frames and lasts exactly 10 seconds at 24 fps before subsequent processing. Insight’s final 60 fps, 598-frame delivery belongs to a later processing stage.
 
 Posters are extracted at 0 seconds; process stills at 1 and 7 seconds, with a maximum image dimension of 1000 pixels. Each pair is from the same final video, not a before/after repair comparison. The original files and transparent masters were not modified by website preparation.
 
@@ -99,7 +99,7 @@ The user confirmed the game origins on 21 September 2026: Mimu is from CHUNITHM;
 
 Arcaea · Divine Oblivion, C-8 scene featuring Saya · Illustration: すずなし (Suzunashi) · © lowiro.
 
-The source scene matches the C-8 image in Rhythm Archive. The illustrator credit was confirmed by the portfolio creator on 21 September 2026. The community story page lists animation credits and does not independently verify this single-image attribution.
+The source scene matches the C-8 image in Rhythm Archive. The portfolio creator confirmed the illustrator as すずなし (Suzunashi). The linked archive identifies the scene; the community story page provides story and animation credits.
 
 - [Matching source scene](https://rhythmarchive.github.io/r/658f47cd-0e3a-78f6-9385-671a64e485c1/)
 - [Arcaea Wiki · C-8 credits](https://wikiwiki.jp/arcaea/ストーリー/Main%20Story%20Act%20II/Divine%20Oblivion#mc8)
@@ -139,7 +139,7 @@ The illustrator is credited on SEGA’s official character page. This project an
 
 - [SEGA character & illustrator credit](https://chunithm.sega.jp/character/#/chunithm/%E5%B0%8E%E5%B8%AB%E3%83%9F%E3%82%A3%E3%83%A0%E3%83%BB%E3%83%9F%E3%82%AF%E3%83%A9%E3%83%BC)
 
-⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Saya (Absolution) and Insight (Nullified) illustrator credits are supported by the community wiki. Arcaea 7.0 story illustration is credited to すずなし following the portfolio creator’s explicit confirmation on 21 September 2026. This is distinguished from independent online verification of the single-image author. The local numbers 97 and 98 are asset/project labels, not official character names. No original artwork, prompt, workflow JSON or video was rewritten by this credit update.
+The portfolio creator confirmed the illustrator credits listed here. The community wiki supports the credits for ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Saya (Absolution) and Insight (Nullified); SEGA’s official page credits Mimu. The Arcaea 7.0 story illustration credit is based on the creator’s confirmation, with Rhythm Archive identifying the source scene. The local numbers 97 and 98 are asset/project labels, not official character names. No original artwork, prompt, workflow JSON or video was rewritten by this credit update.
 
 
 ## Prompt and workflow bibliography · September 2026
