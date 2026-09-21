@@ -1,8 +1,6 @@
 # Pointer asset provenance — v14
 
-Updated: 2026-09-19.
-
-The user requested the cursor shape from the supplied In Falsus UI reference pack. These two PNGs are copied unchanged from `A2-InFalsus-UI-reference-pack-2026-09-19-v2.zip`, directory `02_鼠标样式/主指针`. Both retain their original 64 × 64 pixels and transparency. The visible soft glow is part of those source pixels; the website adds no following cursor halo or separate cursor element.
+These two cursor PNGs are copied unchanged from the In Falsus UI reference pack, directory `02_鼠标样式/主指针`. Both retain their original 64 × 64 pixels and transparency. The visible soft glow is part of those source pixels; the website adds no following cursor halo or separate cursor element.
 
 | Website file | Source filename | SHA-256 (source and copy match) |
 | --- | --- | --- |

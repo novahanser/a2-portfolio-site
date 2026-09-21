@@ -1,7 +1,6 @@
 # Decorative environment visual study
 
 - File: `quiet-dusk-faceted-portal-hero.png`
-- Generated: 18 September 2026
 - Tool: OpenAI built-in image generation (`image_gen__imagegen`); no CLI or external model workflow.
 - Dimensions: 1672 × 941 pixels. Original PNG preserved.
 - SHA-256: `190e14cc321e9b0d470c3778e04a41f185879181fb1d922e806e79fc5c34aec3`
