@@ -6,11 +6,11 @@
 
 在仓库目录启动任意静态 HTTP 服务，再在浏览器中打开服务地址。例如安装 Python 后运行 `python -m http.server 5181 --bind 127.0.0.1`。
 
-## 后续部署
+## 在线访问与发布
 
-仓库当前为 Private，未启用 GitHub Pages。需要发布时，在仓库 Settings → Pages 中选择从 `main` 分支的根目录发布；`.nojekyll` 已包含。
+网站地址：[Frame by Frame — Howard Xu](https://novahanser.github.io/a2-portfolio-site/)。
 
-从私人仓库使用 GitHub Pages 需要支持该功能的 GitHub 方案，例如个人账户的 GitHub Pro。仓库私有不等于网站访问私有，请在正式部署前确认访问范围。详情见 [GitHub Pages 官方说明](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages)。
+仓库为 Public，GitHub Pages 已配置为从 `main` 分支的根目录发布；`.nojekyll` 已包含。后续向 `main` 推送网站更新会触发自动发布。发布进度可在仓库 Actions 中查看。
 
 ## 当前内容
 
