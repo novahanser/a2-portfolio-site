@@ -38,7 +38,7 @@ Workflow images are offline diagrams with English labels, derived from saved wor
 
 Arcaea · Divine Oblivion, C-8 scene featuring Saya · Illustration: すずなし (Suzunashi) · © lowiro.
 
-The source scene matches the C-8 image in Rhythm Archive. The portfolio creator confirmed the illustrator as すずなし (Suzunashi). The linked archive identifies the scene; the community story page provides story and animation credits.
+The linked Rhythm Archive page identifies the Divine Oblivion C-8 scene. The community story page provides story and animation credits.
 
 - [Matching source scene](https://rhythmarchive.github.io/r/658f47cd-0e3a-78f6-9385-671a64e485c1/)
 - [Arcaea Wiki · C-8 credits](https://wikiwiki.jp/arcaea/ストーリー/Main%20Story%20Act%20II/Divine%20Oblivion#mc8)
@@ -78,12 +78,12 @@ The illustrator is credited on SEGA’s official character page. This project an
 
 - [SEGA character & illustrator credit](https://chunithm.sega.jp/character/#/chunithm/%E5%B0%8E%E5%B8%AB%E3%83%9F%E3%82%A3%E3%83%A0%E3%83%BB%E3%83%9F%E3%82%AF%E3%83%A9%E3%83%BC)
 
-The portfolio creator confirmed the illustrator credits listed here. The community wiki supports the credits for ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Saya (Absolution) and Insight (Nullified); SEGA’s official page credits Mimu. The Arcaea 7.0 story illustration credit is based on the creator’s confirmation, with Rhythm Archive identifying the source scene. The local numbers 97 and 98 are asset/project labels, not official character names.
+The community wiki supports the illustrator credits for ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Saya (Absolution) and Insight (Nullified); SEGA’s official page credits Mimu. Rhythm Archive identifies the Divine Oblivion C-8 source scene for Arcaea 7.0 story illustration. The local numbers 97 and 98 are asset/project labels, not official character names.
 
 
 ## Prompt and workflow bibliography
 
-The following references were traced from the three supplied August research files to their official documentation or project repositories. They support the explanatory bibliography; listing a project does not establish that it was installed or used to execute a saved video. Public API regeneration and local two-pass latent refinement are separate workflows.
+These references include official MiniMax and ComfyUI documentation, alongside community guides. The saved workflow records document the generation settings used for each project. Public API regeneration and local two-pass latent refinement are separate workflows.
 
 - **[10] MiniMax. (n.d.-a). MiniMax-H3.** Official model repository. [GitHub](https://github.com/MiniMax-AI/MiniMax-H3). Model variants and local deployment background.
 - **[11] MiniMax. (n.d.-b). Video prompt writing guide (T2VA / I2VA / FL2VA / L2VA).** Official prompt guide. [Hugging Face](https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md). Visual timelines, camera movement and separate audio descriptions.
