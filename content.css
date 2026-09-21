@@ -12,15 +12,16 @@
 .process .evidence-grid { grid-template-columns:minmax(0,1.1fr) minmax(0,1fr); align-items:start; gap:30px; }
 .workflow-image { margin-top:20px; background:#101a28; border:1px solid #b1e7ea25; }
 .workflow-image,.workflow-sections { position:relative; z-index:1; }
-.workflow-image img { display:block; width:100%; height:auto; aspect-ratio:2; object-fit:contain; }
+/* Evidence previews follow their source ratios, without adding letterboxing. */
+.workflow-image img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
 .workflow-sections { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin-top:22px; }
-.workflow-sections img { display:block; width:100%; height:auto; aspect-ratio:1.3; object-fit:contain; background:#101a28; border:1px solid #b1e7ea30; }
+.workflow-sections img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; background:#101a28; border:1px solid #b1e7ea30; }
 .workflow-slot .workflow-sections figcaption { font-size:11px; color:#a6bbca; margin:8px 0 0; padding:0; line-height:1.5; }
 .workflow-slot figcaption>span { display:block; margin-top:9px; }
 .process .evidence-frames { display:grid; grid-template-columns:1fr; gap:26px; }
 .process .evidence-frames.character-frames { grid-template-columns:repeat(2,minmax(0,1fr)); align-items:start; gap:18px; }
 .evidence-frames.character-frames img { aspect-ratio:auto; }
-.evidence-frames img { display:block; width:100%; height:auto; aspect-ratio:1.8; object-fit:contain; background:#080f19; border:1px solid #b1e7ea30; }
+.evidence-frames img { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; background:#080f19; border:1px solid #b1e7ea30; }
 .evidence-frames .shot-slot figcaption { padding-top:12px; }
 .evidence-frames .shot-slot strong { display:block; font-size:17px; margin-top:6px; }
 .evidence-frames .shot-slot figcaption p { line-height:1.65; margin-top:5px; }

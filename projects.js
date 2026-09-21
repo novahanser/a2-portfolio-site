@@ -133,7 +133,7 @@ window.portfolioProjects = {
     "selectionNote": "I kept V2 because later versions had problems with camera movement and how the model interpreted the scene. V2 was closer to what I wanted. My next step is to make the camera direction and scene instructions clearer."
   },
   "cg2s": {
-    "title": "CG2S",
+    "title": "Arcaea 7.0 story illustration",
     "width": 1824,
     "height": 1056,
     "number": "03",
@@ -199,14 +199,14 @@ window.portfolioProjects = {
     "artwork": {
       "sources": [
         [
-          "CG2S source [9]",
+          "Arcaea 7.0 story illustration source [9]",
           "#ref-cg2s"
         ]
       ]
     }
   },
   "c10": {
-    "title": "C10 V10",
+    "title": "⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり",
     "width": 896,
     "height": 896,
     "number": "04",
@@ -217,7 +217,7 @@ window.portfolioProjects = {
     "brief": "Create a restrained wallpaper loop and assess how the result fits changing delivery requirements.",
     "contribution": "I completed this wallpaper study individually. I reviewed and selected the colour-corrected version, then excluded it when I applied a native-output-only requirement to that selection. It remains here as process evidence. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
     "record": [
-      "C10 V10 is a historical comparison candidate, not an accepted final portfolio film.",
+      "⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり is a historical comparison candidate, not an accepted final portfolio film.",
       "I excluded this colour-corrected candidate under the later native-output-only requirement, although it had passed the earlier visual review.",
       "The player uses an 8-bit H.264 viewing copy. Download original retains the unchanged 10-bit archive file. The saved workflow includes colour transfer and export; its colour-corrected output is the archived candidate."
     ],
@@ -272,7 +272,7 @@ window.portfolioProjects = {
     "artwork": {
       "sources": [
         [
-          "C10 source [8]",
+          "⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり source [8]",
           "#ref-story"
         ]
       ]

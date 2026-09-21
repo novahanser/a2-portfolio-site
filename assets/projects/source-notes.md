@@ -4,7 +4,7 @@ Prepared 20 September 2026 from the saved selection records, videos, prompts and
 
 ## Adobe After Effects post-production
 
-Howard Xu confirmed that post-production work on CG2S, C10 V10, Insight (Nullified), Saya (Absolution) and Mimu included small adjustments to the loop animation in Adobe After Effects (AE). Tide in a Cup and Sky Whale are excluded from this AE loop-adjustment description. The file identities and generation settings documented below remain unchanged.
+Howard Xu confirmed that post-production work on Arcaea 7.0 story illustration, ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Insight (Nullified), Saya (Absolution) and Mimu included small adjustments to the loop animation in Adobe After Effects (AE). Tide in a Cup and Sky Whale are excluded from this AE loop-adjustment description. The file identities and generation settings documented below remain unchanged.
 
 ## Selected videos
 
@@ -32,7 +32,7 @@ Both selected V2 workflows use MiniMax H3 FL2VA BF16, 0.4 MP, alignment to 32, 2
 
 ## Historical process examples
 
-### CG2S — accepted archive version
+### Arcaea 7.0 story illustration — accepted archive version
 
 Archived filename: `cg2s_accepted_postprocessed_seed633240673.mp4`. Seed: **633240673**. Duration: **10.125 seconds**, 1824 × 1056, 24 fps, silent. The archive identifies this version as accepted, with colour transfer and a separate support-hand freeze patch.
 
@@ -42,7 +42,7 @@ The generation workflow uses the same illustration as the first and last referen
 
 Original SHA-256: `c54fa1135fb4a67f1016b509b351ef560337831c39b531b1f32ab48fa39715e0`.
 
-### C10 V10 — historical candidate
+### ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり — historical candidate
 
 Archived filename: `c10_historical_candidate_colorcorrected_seed1548894993.mp4`. Seed: **1548894993**. Duration: **10.125 seconds**, 896 × 896, 24 fps, silent. This colour-corrected candidate passed an earlier archive review but was excluded from the later native-output-only selection. It is presented as an iteration example, not as an accepted native-output final.
 
@@ -52,7 +52,7 @@ The saved workflow uses the same illustration as the first and last reference, t
 
 Original SHA-256: `d7953eaa8839dd2814e1778d505e204b52e2bf96d8fd4334797b7bc0c7523209`.
 
-For CG2S and C10, `original.mp4` preserves the archived 10-bit H.264 file. `video.mp4` is an 8-bit H.264 playback transcode for browser compatibility, retaining the original dimensions, frame rate and duration. This website preparation added no content repairs or generated frames. Their posters are extracted at 0.00 seconds; process stills are extracted at 0.00 and 5.00 seconds.
+For Arcaea 7.0 story illustration and ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, `original.mp4` preserves the archived 10-bit H.264 file. `video.mp4` is an 8-bit H.264 playback transcode for browser compatibility, retaining the original dimensions, frame rate and duration. This website preparation added no content repairs or generated frames. Their posters are extracted at 0.00 seconds; process stills are extracted at 0.00 and 5.00 seconds.
 
 ## Character studies added 20 September 2026
 
@@ -90,12 +90,12 @@ All workflow images are **offline renderings with English node labels**, derived
 
 MiniMax H3 is the generation model used in these studies, and ComfyUI is the workflow environment. The prompts, workflow records and selection history document the process. Howard Xu has confirmed that these were individual projects, using AI assistance with prompts, workflow preparation and processing. Original game illustrations remain separately credited.
 
-The user confirmed the game origins on 21 September 2026: Mimu is from CHUNITHM; CG2S, C10 and the other two character artworks are from Arcaea. These are fan-animation / derivative studies. The source checks below establish attribution, not an additional reuse licence.
+The user confirmed the game origins on 21 September 2026: Mimu is from CHUNITHM; Arcaea 7.0 story illustration, ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり and the other two character artworks are from Arcaea. These are fan-animation / derivative studies. The source checks below establish attribution, not an additional reuse licence.
 
 
 ## Artwork attribution update · 21 September 2026
 
-### CG2S
+### Arcaea 7.0 story illustration
 
 Arcaea · Divine Oblivion, C-8 scene featuring Saya · Illustration: すずなし (Suzunashi) · © lowiro.
 
@@ -104,7 +104,7 @@ The source scene matches the C-8 image in Rhythm Archive. The illustrator credit
 - [Matching source scene](https://rhythmarchive.github.io/r/658f47cd-0e3a-78f6-9385-671a64e485c1/)
 - [Arcaea Wiki · C-8 credits](https://wikiwiki.jp/arcaea/ストーリー/Main%20Story%20Act%20II/Divine%20Oblivion#mc8)
 
-### C10 V10
+### ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり
 
 Arcaea · Divine Oblivion, C-10-1 scene · Illustration: すずなし (Suzunashi) · © lowiro.
 
@@ -139,7 +139,7 @@ The illustrator is credited on SEGA’s official character page. This project an
 
 - [SEGA character & illustrator credit](https://chunithm.sega.jp/character/#/chunithm/%E5%B0%8E%E5%B8%AB%E3%83%9F%E3%82%A3%E3%83%A0%E3%83%BB%E3%83%9F%E3%82%AF%E3%83%A9%E3%83%BC)
 
-C10, Saya (Absolution) and Insight (Nullified) illustrator credits are supported by the community wiki. CG2S is credited to すずなし following the portfolio creator’s explicit confirmation on 21 September 2026. This is distinguished from independent online verification of the single-image author. The local numbers 97 and 98 are asset/project labels, not official character names. No original artwork, prompt, workflow JSON or video was rewritten by this credit update.
+⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり, Saya (Absolution) and Insight (Nullified) illustrator credits are supported by the community wiki. Arcaea 7.0 story illustration is credited to すずなし following the portfolio creator’s explicit confirmation on 21 September 2026. This is distinguished from independent online verification of the single-image author. The local numbers 97 and 98 are asset/project labels, not official character names. No original artwork, prompt, workflow JSON or video was rewritten by this credit update.
 
 
 ## Prompt and workflow bibliography · September 2026
