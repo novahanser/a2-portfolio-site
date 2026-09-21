@@ -1,6 +1,4 @@
-# Mimu / generation evidence
-
-Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black-background delivery. It is not the native H3 generation export.
+# Mimu: generation evidence
 
 ## Actual generation parameters
 
@@ -11,24 +9,16 @@ Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black
 - Same image at the first and last frame. Turbo LoRA absent from execution API. BasicGuider does not expose an independent CFG control.
 - Native generation export: H.264 / MP4 / yuv420p / CRF 12; metadata enabled; no audio.
 
-## Preserved evidence
+## Saved files
 
-- Source api: `ミィム_00006_实际执行_API.json`
-- Source ui: `ミィム_00006_成片内嵌_UI.json`
-- `api.json` and `ui.json` retain original embedded or supplied records. They have not been relabelled or normalized. Node titles may contain legacy values.
-- `prompt.txt` is the verbatim value of execution API node 355.
-- `workflow*.png` / `.webp` are English, grouped **offline workflow diagrams**, not screenshots from a running ComfyUI session. IDs map to the original nodes. They simplify the graph for reading; JSON files contain the full graph.
+- [Executed API](api.json) and [saved UI](ui.json) contain the generation graph and settings. Local computer paths are omitted from the public copies.
+- [Original English prompt](prompt.txt) retains the executed prompt.
+- Workflow images are offline diagrams with English node labels. The JSON files contain the full graph.
 
-## Later production stage
+## Displayed video
 
-The creator confirmed that Adobe After Effects (AE) was used to fine-tune the loop and remove three frames from the 243-frame source, leaving 240 frames and exactly 10 seconds at 24 fps before subsequent processing.
+The displayed MP4 is 2160 × 2880 at 24 fps: 240 frames, 10 seconds, with no audio.
 
-The later 2160 x 2880, 240-frame input was keyed with CorridorKey, followed by mild global green-spill cleanup. The transparent master was composited over black in linear light for 10 Mbps H.264 delivery.
+## Artwork source
 
-Delivered media: 2160 x 2880 / 24 fps / 240 frames / 10 s. No audio; black background baked into MP4.
-
-## Limits and interpretation
-
-The filename seed197875471725214 is a legacy label. The actual execution seed is 603730895876546. The UI and API supplied in the handoff were preserved byte-for-byte.
-
-The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. The source illustration is Mimu from CHUNITHM, credited to 煎茶 (Sencha) on SEGA’s official character page. See the [source and attribution notes](../source-notes.md) for supporting links; those credits do not establish a reuse licence. No new generation or reprocessing was run when preparing these website evidence assets.
+See the [source and attribution notes](../source-notes.md) for the confirmed original illustrator and supporting references.

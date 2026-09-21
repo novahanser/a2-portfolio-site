@@ -1,4 +1,4 @@
-// Project records: supplied media and saved production evidence.
+// Project records: supplied media and saved generation evidence.
 window.portfolioProjects = {
   "tide": {
     "title": "Tide in a Cup",
@@ -138,17 +138,17 @@ window.portfolioProjects = {
     "height": 1056,
     "number": "03",
     "duration": "10.125 SEC",
-    "status": "Archive · Accepted with post-production",
+    "status": "Archive · Accepted version",
     "category": "ILLUSTRATED / LOOP",
-    "summary": "An illustrated scene developed into a short, silent loop. Restrained movement keeps the source composition readable. The accepted archive version also includes colour treatment and a separate correction to the supporting hand.",
+    "summary": "An illustrated scene developed into a short, silent loop. Restrained movement keeps the source composition readable.",
     "brief": "Extend an illustration through restrained movement while retaining the composition and character details.",
-    "contribution": "I completed this animation study individually. I reviewed the generated motion and directed the colour treatment and supporting-hand correction included in the saved final. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
+    "contribution": "I completed this animation study individually, including motion direction, review and final selection.",
     "record": [
       "This is a historical accepted version, presented as supporting process evidence. It is separate from the two selected V2 films.",
-      "The saved generation graph uses the same illustration as the first and last reference, two sampling stages, 1.5× latent upscaling and colour transfer. A separate support-hand freeze patch is part of the accepted final video and is not reproduced by the generation graph alone.",
-      "The browser player uses an 8-bit H.264 viewing copy of the archived 10-bit file. The unchanged archive file is available through Download original."
+      "The saved generation graph uses the same illustration as the first and last reference, two sampling stages and 1.5× latent upscaling.",
+      "The browser player uses an 8-bit H.264 viewing copy. The 10-bit archived file is available through Download original."
     ],
-    "workflowNote": "This offline diagram uses English node labels to show the archived generation workflow. It is not a screenshot of a running ComfyUI session. The accepted final also includes a support-hand freeze patch applied separately from the generation graph.",
+    "workflowNote": "This offline diagram uses English node labels to show the archived generation workflow. It is not a screenshot of a running ComfyUI session.",
     "specs": [
       [
         "Duration",
@@ -164,7 +164,7 @@ window.portfolioProjects = {
       ],
       [
         "Archive status",
-        "Accepted with post-production"
+        "Accepted version"
       ],
       [
         "Viewing copy",
@@ -213,15 +213,15 @@ window.portfolioProjects = {
     "duration": "10.125 SEC",
     "status": "Archive · Candidate excluded from final selection",
     "category": "ANIMATED / WALLPAPER",
-    "summary": "A silent animated-wallpaper study retained to document iteration. This colour-corrected candidate passed an earlier review, then fell outside the later requirement for native output only.",
+    "summary": "A silent animated-wallpaper study retained as an iteration example. It remains a historical candidate, separate from the final selection.",
     "brief": "Create a restrained wallpaper loop and assess how the result fits changing delivery requirements.",
-    "contribution": "I completed this wallpaper study individually. I reviewed and selected the colour-corrected version, then excluded it when I applied a native-output-only requirement to that selection. It remains here as process evidence. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
+    "contribution": "I completed this wallpaper study individually. I reviewed the candidate and retained it here as process evidence.",
     "record": [
-      "⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり is a historical comparison candidate, not an accepted final portfolio film.",
-      "I excluded this colour-corrected candidate under the later native-output-only requirement, although it had passed the earlier visual review.",
-      "The player uses an 8-bit H.264 viewing copy. Download original retains the unchanged 10-bit archive file. The saved workflow includes colour transfer and export; its colour-corrected output is the archived candidate."
+      "This is a historical comparison candidate, separate from the two selected portfolio films.",
+      "The saved workflow uses the same illustration as the first and last reference, two sampling stages and 2× latent upscaling.",
+      "The player uses an 8-bit H.264 viewing copy. Download original provides the 10-bit archived file."
     ],
-    "workflowNote": "English-node offline rendering of the archived generation workflow; not a screenshot of a running ComfyUI session. The saved graph uses the same illustration at both ends, two sampling stages, 2× latent upscaling and global colour transfer. This colour-corrected version passed an earlier visual review but was excluded by a later requirement for native output.",
+    "workflowNote": "English-node offline rendering of the archived generation workflow. The saved graph uses the same illustration at both ends, two sampling stages and 2× latent upscaling.",
     "specs": [
       [
         "Duration",
@@ -237,7 +237,7 @@ window.portfolioProjects = {
       ],
       [
         "Archive status",
-        "Excluded · Native-output criterion"
+        "Historical candidate"
       ],
       [
         "Viewing copy",
@@ -279,14 +279,14 @@ window.portfolioProjects = {
     }
   },
   "character98": {
-    "status": "Character study · Final black-background composite",
+    "status": "Character study · Final video",
     "hasApi": true,
     "original": "video.mp4",
     "workflowPrefix": "workflow",
     "characterStudy": true,
     "badge": "CHARACTER STUDY",
     "workflowTitle": "From reference to generated clip",
-    "playback": "Final MP4 · Silent · Black background is part of the footage",
+    "playback": "Final MP4 · Silent",
     "workflowSections": [
       [
         "inputs",
@@ -301,21 +301,20 @@ window.portfolioProjects = {
         "Silent export"
       ]
     ],
-    "workflowNote": "English offline diagram derived from the executed H3 generation API. Screen removal, colour-spill cleanup and the final black-background composite were separate post-production stages. The downloadable API is the reference for executed settings; the saved UI may retain legacy labels.",
+    "workflowNote": "English offline diagram derived from the saved H3 generation workflow. The downloadable API records the executed settings; the saved UI may retain legacy labels.",
     "title": "Insight (Nullified)",
     "number": "05",
     "width": 2160,
     "height": 2982,
     "duration": "09.97 SEC",
-    "category": "GREEN SCREEN / CLOAK CLEANUP",
-    "summary": "A pale-haired figure in flowing violet cloth becomes a short character animation. The post-production focus was the purple cloak: removing green contamination while retaining its colour and avoiding a washed-out patch.",
-    "brief": "Animate the supplied illustration using the same opening and closing image, then remove the green screen and refine the cloak before delivery on black.",
-    "contribution": "I completed the animation and finishing study individually. My work covered motion direction, review, screen removal and colour cleanup. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
+    "category": "CHARACTER / VIOLET CLOTH",
+    "summary": "A pale-haired figure in flowing violet cloth becomes a short character animation. The portrait framing keeps the figure and fabric visible against a black background.",
+    "brief": "Animate the supplied illustration using the same opening and closing image, keeping the character and flowing fabric consistent.",
+    "contribution": "I completed this animation study individually, including motion direction, review and final selection.",
     "record": [
-      "The player contains the final 2160 × 2982, 60 fps black-background MP4: 598 frames, 9.966667 seconds, no audio. It is an unchanged copy of the delivered file, not a transparent video.",
-      "The executed generation API records seed 1005113135037086, a 672 × 928 base, 2× latent upscaling and 1344 × 1856 generated output. Generation produced 243 frames at 24 fps. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving 240 frames and exactly 10 seconds at 24 fps before further post-production. The final 60 fps delivery comes from a later processing stage.",
-      "After CorridorKey screen removal, a local mask targeted the violet cloak. The approved correction used spill_luma 0.36; the review aimed to match the surrounding cloth rather than whiten the affected area. The transparent ProRes master was then composited on black.",
-      "The generation workflow alone does not reproduce the complete final composite. The two stills are frames from the delivered video, not a before-and-after cleanup comparison."
+      "The displayed MP4 is 2160 × 2982 at 60 fps: 598 frames, 9.966667 seconds, with no audio.",
+      "The executed generation API records seed 1005113135037086, a 672 × 928 base and 2× latent upscaling to 1344 × 1856.",
+      "Both stills are timecoded frames from the displayed video."
     ],
     "specs": [
       [
@@ -337,17 +336,13 @@ window.portfolioProjects = {
       [
         "Executed seed",
         "1005113135037086"
-      ],
-      [
-        "Finishing",
-        "Green screen · Local cloak cleanup"
       ]
     ],
     "frames": [
       {
         "time": "00:01.00",
         "title": "Violet cloth and fine hair",
-        "description": "Pale flowing hair and a circular ornament frame the figure. Violet cloak panels remain visible against the black composite.",
+        "description": "Pale flowing hair and a circular ornament frame the figure. Violet cloak panels remain visible against the black background.",
         "file": "frame-a.webp"
       },
       {
@@ -366,17 +361,18 @@ window.portfolioProjects = {
           "#ref-partners"
         ]
       ]
-    }
+    },
+    "workflowVersion": "48"
   },
   "character97": {
-    "status": "Character study · Final black-background composite",
+    "status": "Character study · Final video",
     "hasApi": true,
     "original": "video.mp4",
     "workflowPrefix": "workflow",
     "characterStudy": true,
     "badge": "CHARACTER STUDY",
     "workflowTitle": "From reference to generated clip",
-    "playback": "Final MP4 · Silent · Black background is part of the footage",
+    "playback": "Final MP4 · Silent",
     "workflowSections": [
       [
         "inputs",
@@ -391,21 +387,20 @@ window.portfolioProjects = {
         "Silent export"
       ]
     ],
-    "workflowNote": "English offline diagram derived from the executed H3 generation API. Screen removal, colour-spill cleanup and the final black-background composite were separate post-production stages. The downloadable API is the reference for executed settings; the saved UI may retain legacy labels.",
+    "workflowNote": "English offline diagram derived from the saved H3 generation workflow. The downloadable API records the executed settings; the saved UI may retain legacy labels.",
     "title": "Saya (Absolution)",
     "number": "06",
     "width": 1600,
     "height": 1600,
     "duration": "10.00 SEC",
-    "category": "RED SCREEN / LOCAL REPAIR",
-    "summary": "The square frame contains a mint-haired figure with long white and teal fabric. After removing the red background, I cleaned local colour spill and made a protected repair to the forehead.",
-    "brief": "Animate the supplied character, then remove the red screen and refine selected contaminated details in the current 1600 × 1600 version.",
-    "contribution": "I completed the animation and finishing study individually. My work covered motion direction, review, screen removal and colour cleanup. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
+    "category": "CHARACTER / FLOWING FABRIC",
+    "summary": "A mint-haired figure with long white and teal fabric fills the square frame. The animation follows the changing folds and outer silhouette of the fabric.",
+    "brief": "Animate the supplied character while preserving the square composition and the details of the figure and flowing fabric.",
+    "contribution": "I completed this animation study individually, including motion direction, review and final selection.",
     "record": [
-      "The player uses the final 1600 × 1600 MP4: 240 frames at 24 fps, 10 seconds, no audio. It was composited from the later 1600-size transparent master, not the older 2160-size cleanup.",
-      "The original generation API records seed 322853979834763, 20 steps, Split Sigmas 6 and 2× upscaling from 800 × 800. Legacy filenames include a different seed and a 1.6× label; those names are not the executed values.",
-      "CorridorKey processing was adapted for the red screen. Local red-spill cleanup covered selected areas including the arm-side fabric, sword handle and eye ornament. A separate protected forehead repair was included before the transparent master was exported.",
-      "The generated source had 243 frames. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving a 240-frame clip lasting exactly 10 seconds at 24 fps for keying. Both stills come from the displayed final composite."
+      "The displayed MP4 is 1600 × 1600 at 24 fps: 240 frames, 10 seconds, with no audio.",
+      "The executed generation API records seed 322853979834763, 20 steps, Split Sigmas 6 and 2× upscaling from 800 × 800. Some saved filenames contain legacy values; the API records the executed settings.",
+      "Both stills are timecoded frames from the displayed video."
     ],
     "specs": [
       [
@@ -427,10 +422,6 @@ window.portfolioProjects = {
       [
         "Executed seed",
         "322853979834763"
-      ],
-      [
-        "Finishing",
-        "Red screen · Local colour & alpha repair"
       ]
     ],
     "frames": [
@@ -456,17 +447,18 @@ window.portfolioProjects = {
           "#ref-partners"
         ]
       ]
-    }
+    },
+    "workflowVersion": "48"
   },
   "mimu": {
-    "status": "Character study · Final black-background composite",
+    "status": "Character study · Final video",
     "hasApi": true,
     "original": "video.mp4",
     "workflowPrefix": "workflow",
     "characterStudy": true,
     "badge": "CHARACTER STUDY",
     "workflowTitle": "From reference to generated clip",
-    "playback": "Final MP4 · Silent · Black background is part of the footage",
+    "playback": "Final MP4 · Silent",
     "workflowSections": [
       [
         "inputs",
@@ -481,21 +473,20 @@ window.portfolioProjects = {
         "Silent export"
       ]
     ],
-    "workflowNote": "English offline diagram derived from the executed H3 generation API. Screen removal, colour-spill cleanup and the final black-background composite were separate post-production stages. The downloadable API is the reference for executed settings; the saved UI may retain legacy labels.",
+    "workflowNote": "English offline diagram derived from the saved H3 generation workflow. The downloadable API records the executed settings; the saved UI may retain legacy labels.",
     "title": "Mimu",
     "number": "07",
     "width": 2160,
     "height": 2880,
     "duration": "10.00 SEC",
-    "category": "GREEN SCREEN / SOFT EDGES",
-    "summary": "Mimu’s lilac hair, layered pink costume and jewel-tipped staff form a portrait character study. A gentle green-spill cleanup follows screen removal, with fine hair and costume edges kept visible on the black background.",
-    "brief": "Animate the supplied Mimu illustration with matched opening and closing images, then prepare a clean, silent character composite for presentation.",
-    "contribution": "I completed the animation and finishing study individually. My work covered motion direction, review, screen removal and colour cleanup. In post-production, I used Adobe After Effects (AE) to make small adjustments to the loop animation.",
+    "category": "CHARACTER / HAIR & RIBBONS",
+    "summary": "Mimu’s lilac hair, layered pink costume and jewel-tipped staff form a portrait character study. Small movements in the hair and ribbons animate the illustration.",
+    "brief": "Animate the supplied Mimu illustration with matched opening and closing images, retaining the character and costume details.",
+    "contribution": "I completed this animation study individually, including motion direction, review and final selection.",
     "record": [
-      "The displayed final MP4 is 2160 × 2880, 24 fps and 240 frames: 10 seconds, with no audio. Its black background is baked into the picture; the transparent ProRes master is retained separately.",
-      "The actual generation API records seed 603730895876546, a 672 × 896 base and 2× latent upscaling to 1344 × 1792. The older seed in the source filename does not identify the executed run. Original generation was 243 frames at 24 fps. I used Adobe After Effects (AE) to fine-tune the loop and remove three frames, leaving 240 frames and exactly 10 seconds at 24 fps.",
-      "CorridorKey screen removal was followed by a mild global green-spill pass with strength 0.9 and warm-colour protection 0.95. The cloak mask from Insight (Nullified) and local repairs from Saya (Absolution) were not applied to Mimu.",
-      "The final black composite was prepared from the transparent master using linear-light alpha compositing. These images are timecoded frames of that final file, not separate iterations."
+      "The displayed MP4 is 2160 × 2880 at 24 fps: 240 frames, 10 seconds, with no audio.",
+      "The executed generation API records seed 603730895876546, a 672 × 896 base and 2× latent upscaling to 1344 × 1792. The older seed in the source filename does not identify the executed run.",
+      "Both stills are timecoded frames from the displayed video."
     ],
     "specs": [
       [
@@ -517,10 +508,6 @@ window.portfolioProjects = {
       [
         "Executed seed",
         "603730895876546"
-      ],
-      [
-        "Finishing",
-        "Green screen · Gentle global cleanup"
       ]
     ],
     "frames": [
@@ -546,6 +533,7 @@ window.portfolioProjects = {
           "#ref-mimu"
         ]
       ]
-    }
+    },
+    "workflowVersion": "48"
   }
 };

@@ -1,6 +1,4 @@
-# Character 98 / generation evidence
-
-Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black-background delivery. It is not the native H3 generation export.
+# Insight (Nullified): generation evidence
 
 ## Actual generation parameters
 
@@ -11,23 +9,16 @@ Recorded 20 September 2026. The webpage displays the later keyed, cleaned, black
 - Same image at the first and last frame. Turbo LoRA absent from execution API. BasicGuider does not expose an independent CFG control.
 - Native generation export: H.264 / MP4 / yuv420p / CRF 12; metadata enabled; no audio.
 
-## Preserved evidence
+## Saved files
 
-- Source png: `98 (realesrgan-x4plus-anime x2) 3to4.png_98 (realesrgan-x4plus-anime x2) 3to4.png_1005113135037086_green_00001.png`
-- `api.json` and `ui.json` retain original embedded or supplied records. They have not been relabelled or normalized. Node titles may contain legacy values.
-- `prompt.txt` is the verbatim value of execution API node 355.
-- `workflow*.png` / `.webp` are English, grouped **offline workflow diagrams**, not screenshots from a running ComfyUI session. IDs map to the original nodes. They simplify the graph for reading; JSON files contain the full graph.
+- [Executed API](api.json) and [saved UI](ui.json) contain the generation graph and settings. Local computer paths are omitted from the public copies.
+- [Original English prompt](prompt.txt) retains the executed prompt.
+- Workflow images are offline diagrams with English node labels. The JSON files contain the full graph.
 
-## Later production stage
+## Displayed video
 
-The creator confirmed that Adobe After Effects (AE) was used to fine-tune the loop and remove three frames from the 243-frame source, leaving 240 frames and exactly 10 seconds at 24 fps before subsequent processing.
+The displayed MP4 is 2160 × 2982 at 60 fps: 598 frames, 9.966667 seconds, with no audio.
 
-CorridorKey green-screen removal, then local purple-cloak cleanup (spill_luma 0.36). The final transparent master is 2160 x 2982 at 60 fps. Linear-light black compositing and 10 Mbps H.264 delivery followed.
+## Artwork source
 
-Delivered media: 2160 x 2982 / 60 fps / 598 frames / 9.966667 s. No audio; black background baked into MP4.
-
-## Limits and interpretation
-
-The saved standalone v5 UI seed differs from the actual output. The embedded API is the parameter authority. The original prompt is preserved without editorial changes.
-
-The diagrams cover H3 generation only. The later keying, cleanup, ProRes alpha master and black-composite steps are not included in these UI/API downloads. The source illustration is Insight (Nullified) from Arcaea, credited to すずなし (Suzunashi) by the Japanese community wiki. See the [source and attribution notes](../source-notes.md) for supporting links; those credits do not establish a reuse licence. No new generation or reprocessing was run when preparing these website evidence assets.
+See the [source and attribution notes](../source-notes.md) for the confirmed original illustrator and supporting references.

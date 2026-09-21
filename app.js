@@ -5,7 +5,8 @@ const safe = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'
 let currentProject = null;
 const player = document.getElementById('project-video');
 function evidenceImage(p, file, alt, title, caption, fullFile) {
-  return `<img src="${p.base}${file}" alt="${safe(alt)}" loading="lazy" decoding="async" data-preview-title="${safe(p.title+' · '+title)}" data-preview-caption="${safe(caption)}"${fullFile ? ` data-preview-src="${p.base}${fullFile}"` : ''}>`;
+  const revision=file.startsWith('workflow') && p.workflowVersion ? '?v='+p.workflowVersion : '';
+  return `<img src="${p.base}${file}${revision}" alt="${safe(alt)}" loading="lazy" decoding="async" data-preview-title="${safe(p.title+' · '+title)}" data-preview-caption="${safe(caption)}"${fullFile ? ` data-preview-src="${p.base}${fullFile}${revision}"` : ''}>`;
 }
 function processMarkup(p) {
   const overview = p.workflowPrefix;

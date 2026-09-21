@@ -90,3 +90,19 @@
   .reflection-panel .reflection { max-width:none; }
   .profile-story,.profile-skills { max-width:1100px; }
 }
+
+/* The selected role remains a compact card without the separate reflection. */
+.application .application-grid { display:block; margin-top:28px; }
+.application .job-card { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,380px); column-gap:40px; max-width:none; align-items:start; }
+.application .job-card > * { grid-column:1; }
+.application .job-card .ad-preview { grid-column:2; grid-row:1 / span 5; height:220px; margin:0; }
+.application .job-card .company-name { margin-top:20px; }
+.application .job-card h3 { margin-top:12px; }
+.application .job-card .outline-button { max-width:340px; margin-top:20px; }
+.profile-facts { grid-template-columns:1fr 1.6fr 1fr; }
+@media(max-width:700px) {
+  .application .job-card { grid-template-columns:1fr; }
+  .application .job-card .ad-preview { grid-column:1; grid-row:auto; height:180px; margin-top:24px; }
+  .application .job-card .outline-button { max-width:none; }
+  .profile-facts { grid-template-columns:1fr 1fr; }
+}
