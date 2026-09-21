@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1320">
+  <meta name="description" content="Howard Xu's AI video portfolio. A Media and Communication student's independent projects, creative decisions and production records.">
+  <title>Howard Xu | Frame by Frame</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%230b1320' d='M0 0h64v64H0z'/%3E%3Cpath fill='none' stroke='%23b1e7ea' stroke-width='4' d='M12 48 32 12l20 36H12m10-18h20'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="effects.css?v=39">
+  <link rel="stylesheet" href="image-preview.css">
+  <link rel="stylesheet" href="reference-ui.css?v=29">
+  <link rel="stylesheet" href="viewer-frame.css">
+  <link rel="stylesheet" href="sparse-motion.css">
+  <link rel="stylesheet" href="cursor.css">
+  <link rel="stylesheet" href="content.css?v=40">
+  <link rel="stylesheet" href="scale-background.css?v=28">
+  <script src="projects.js?v=45" defer></script>
+  <script src="app.js?v=45" defer></script>
+  <script src="scroll-palette.js?v=24" defer></script>
+  <script src="effects.js?v=42" defer></script>
+  <script src="scale-background.js?v=28.1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="scroll-palette" aria-hidden="true"><div class="palette-blue"></div><div class="palette-red"></div></div>
+  <div class="ambient-scene" aria-hidden="true">
+    <div class="ambient-wash wash-cyan"></div><div class="ambient-wash wash-violet"></div>
+    <div class="scale-background pattern--a" data-background="01" aria-hidden="true">
+      <canvas class="weave-field" aria-hidden="true"></canvas>
+      <div class="weave-light"></div>
+    </div>
+    <div class="ambient-topology"></div>
+
+    <div class="ambient-glass"><span class="ambient-pane pane-near"></span><span class="ambient-pane pane-far"></span></div>
+    <canvas id="particle-field"></canvas>
+  </div>
+  <canvas id="pointer-trail" aria-hidden="true"></canvas>
+  <div class="page-grain" aria-hidden="true"></div>
+  <div class="scene-brackets" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Howard Xu portfolio home"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M4 29 18 5l14 24H4m8-10h12"/></svg><span>Howard Xu<small>CREATIVE PORTFOLIO / 2026</small></span></a>
+    <div class="header-actions"><nav aria-label="Main navigation"><a href="#application">Application</a><a href="#work">Work</a><a href="#process">Process</a><a href="#profile">Profile</a></nav><button id="motion-toggle" class="motion-toggle" type="button" aria-label="Pause background animation" aria-pressed="false" hidden><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v16M2 10h16M4.3 4.3l11.4 11.4M4.3 15.7 15.7 4.3"/></svg><span>Motion on</span></button></div>
+  </header>
+  <main id="main">
+    <section class="hero section-width" id="top" aria-labelledby="hero-title">
+      <div class="glass-sculpture" aria-hidden="true"><div class="prism-space">
+        <svg class="prism-piece prism-main" viewBox="0 0 500 450" fill="none">
+          <defs>
+            <linearGradient id="prism-cyan" x1="95" y1="80" x2="390" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#d9f8ff" stop-opacity=".28"/><stop offset=".55" stop-color="#75b4cb" stop-opacity=".015"/><stop offset="1" stop-color="#bbebf5" stop-opacity=".19"/></linearGradient>
+            <linearGradient id="prism-rose"><stop stop-color="#b1688c" stop-opacity=".18"/><stop offset="1" stop-color="#9d7fa8" stop-opacity=".015"/></linearGradient>
+            <linearGradient id="prism-spectrum-v17" x1="205" y1="165" x2="390" y2="205" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#b2d4e9" stop-opacity=".025"/>
+              <stop offset=".16" stop-color="#a7c6ea" stop-opacity=".035"/>
+              <stop offset=".24" stop-color="#a3b8ee" stop-opacity=".05"/>
+              <stop offset=".32" stop-color="#b3bdf6" stop-opacity=".075"/>
+              <stop offset=".39" stop-color="#b7d1fc" stop-opacity=".11"/>
+              <stop offset=".44" stop-color="#afe8fc" stop-opacity=".16"/>
+              <stop offset=".48" stop-color="#c5f8f5" stop-opacity=".19"/>
+              <stop offset=".52" stop-color="#e3fff0" stop-opacity=".17"/>
+              <stop offset=".56" stop-color="#f4f2dc" stop-opacity=".18"/>
+              <stop offset=".60" stop-color="#ffdec9" stop-opacity=".15"/>
+              <stop offset=".64" stop-color="#edc1d9" stop-opacity=".16"/>
+              <stop offset=".69" stop-color="#d4bbee" stop-opacity=".12"/>
+              <stop offset=".75" stop-color="#bec2ed" stop-opacity=".075"/>
+              <stop offset=".82" stop-color="#b4dbea" stop-opacity=".05"/>
+              <stop offset=".90" stop-color="#c6ecf3" stop-opacity=".035"/>
+              <stop offset="1" stop-color="#d0f5ff" stop-opacity=".025"/>
+            </linearGradient>
+          </defs>
+          <path d="M291 30 418 366 104 303Z" fill="url(#prism-cyan)" stroke="#c5e9f1" stroke-opacity=".42"/>
+          <path class="prism-light-face prism-dispersion-face" d="m291 30-58 245 185 91Z" fill="#d0f5ff" fill-opacity=".075" stroke="#c5e9f1" stroke-opacity=".26"/>
+          <path d="m291 30-187 273 129-28Z" fill="url(#prism-rose)" stroke="#c5e9f1" stroke-opacity=".2"/>
+          <path d="m104 303 129-28 185 91Z" fill="#91cddc" fill-opacity=".055"/>
+          <g class="prism-dispersion-seam" stroke-width="1" stroke-linecap="round">
+            <path d="m291 30-58 245 185 91" transform="translate(-.9 .45)" stroke="#a8e5fc" stroke-opacity=".32"/>
+            <path d="m291 30-58 245 185 91" transform="translate(.9 -.45)" stroke="#e6b8df" stroke-opacity=".26"/>
+          </g>
+          <path d="m291 30-58 245M104 303l314 63" stroke="#d5f6fa" stroke-opacity=".42"/>
+        </svg>
+        <svg class="prism-piece prism-left" viewBox="0 0 500 450" fill="none"><path d="m61 273 99-164-41 115Z" fill="#bcdbe8" fill-opacity=".11" stroke="#d7f4f6" stroke-opacity=".24"/></svg>
+        <svg class="prism-piece prism-right" viewBox="0 0 500 450" fill="none"><path d="m388 132 65 57-32 53Z" fill="#b1688c" fill-opacity=".12" stroke="#c99bb4" stroke-opacity=".3"/></svg>
+        <svg class="prism-piece prism-below" viewBox="0 0 500 450" fill="none"><path d="m216 359 90 42-117 15Z" fill="#8eb1c6" fill-opacity=".065" stroke="#c7e4ef" stroke-opacity=".14"/></svg>
+      </div></div>
+      <div class="hero-heading"><p class="eyebrow"><span class="tiny-diamond" aria-hidden="true"></span> AI MOVING IMAGE / CREATIVE PORTFOLIO</p><h1 id="hero-title">FRAME<br><span>BY FRAME.</span></h1><div class="hero-signature"><span class="signature-line" aria-hidden="true"></span><span>IDEA / PROCESS / PERSPECTIVE</span></div></div>
+      <div class="hero-note"><p class="section-kicker">A CREATIVE APPLICATION FOR</p><p class="role-title">Canva <br>AI Video Lead</p><p class="muted">12 Month FTC</p><div class="hero-rule"></div><p>Visual ideas, production decisions <br>and the evidence behind them.</p><a class="text-link" href="#work">Explore the project records <span aria-hidden="true">↓</span></a></div>
+      <div class="hero-baseline"><span>MEDIA AND COMMUNICATION STUDENT</span><span class="draft-label">APPLICATION PORTFOLIO</span></div>
+    </section>
+
+    <section class="application section-width section-space" id="application" aria-labelledby="application-title">
+      <div class="section-heading"><div><p class="section-kicker"><span class="chapter-no">01</span> WHY THIS ROLE</p><h2 id="application-title">A career direction</h2></div><span class="reflection-label">REFLECTION / 162 WORDS</span></div>
+      <div class="application-grid">
+        <div class="reflection-panel">
+        <div class="statement-heading"><span>PERSONAL STATEMENT</span><span>APPLICATION / 2026</span></div>
+        <div class="reflection" id="reflection-copy">
+          <p>My experiments with AI video have made me want to understand how it is changing creative production. I selected Canva's AI Video Lead role because it connects my interest in AI video with developing an idea into a finished piece. The advertisement's emphasis on visual storytelling, prompt experimentation and production judgement appeals to me <a href="#ref-role">(Canva, n.d.-b)</a>.</p><p>My independent projects have given me a starting point. I have tested local workflows, revised prompts and compared versions before choosing what to present. I enjoy examining an unsatisfactory result and deciding what to change. Course ideas about audiences, communication purpose and reflection have encouraged me to consider what viewers should understand and whether my choices support that purpose.</p><p>I see this position as a future career goal and want to become an AI video creator who can interpret a brief, explain creative decisions and deliver consistent work. My next priorities are clearer camera direction and more reliable control over how the model interprets a scene.</p></div>
+        </div>
+        <aside class="job-card" aria-label="Selected job advertisement">
+          <div class="job-card-top"><span>SELECTED POSITION</span><span>↗</span></div>
+          <p class="company-name">Canva</p><h3>AI Video Lead</h3><p class="muted">12 Month FTC</p>
+          <div class="ad-preview"><img id="advertisement-image" src="assets/canva-job-ad.png" alt="Original SEEK advertisement for Canva’s AI Video Lead role" data-preview-title="Canva · AI Video Lead" data-preview-caption="Original capture" data-preview-source="https://au.seek.com/job/94151224" data-preview-source-label="SEEK job advertisement" loading="lazy" width="2214" height="8274"></div>
+          <button class="outline-button" id="view-ad" type="button" data-preview-target="advertisement-image" aria-haspopup="dialog" aria-controls="image-dialog">View captured advertisement <span aria-hidden="true">↗</span></button>
+          <p class="capture-note" hidden></p>
+        </aside>
+      </div>
+      
+    </section>
+
+    <section class="work section-width" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="section-kicker"><span class="chapter-no">02</span> PROJECT RECORDS</p><h2 id="work-title">Selected studies</h2></div><p>Two selected films.<br>Two archive studies.<br>Three character studies.</p></div>
+      <div class="work-shell">
+        <div class="project-nav" role="tablist" aria-label="Choose a project" aria-orientation="vertical">
+          <button class="project-tab active" id="tab-tide" role="tab" aria-selected="true" aria-controls="project-panel" data-project="tide"><span class="project-number">01</span><span><strong>Tide in a Cup</strong><small>PHOTOGRAPHIC / SURREAL</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-whale" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="whale"><span class="project-number">02</span><span><strong>Sky Whale</strong><small>SCALE / CONTINUOUS SHOT</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-cg2s" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="cg2s"><span class="project-number">03</span><span><strong>CG2S</strong><small>ILLUSTRATED / LOOP</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-c10" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="c10"><span class="project-number">04</span><span><strong>C10 V10</strong><small>ANIMATED / WALLPAPER</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-character98" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="character98"><span class="project-number">05</span><span><strong>Insight (Nullified)</strong><small>GREEN SCREEN / CLOAK CLEANUP</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-character97" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="character97"><span class="project-number">06</span><span><strong>Saya (Absolution)</strong><small>RED SCREEN / LOCAL REPAIR</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="project-tab" id="tab-mimu" role="tab" aria-selected="false" aria-controls="project-panel" tabindex="-1" data-project="mimu"><span class="project-number">07</span><span><strong>Mimu</strong><small>GREEN SCREEN / SOFT EDGES</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+          <p class="project-index-note">CONCEPT → WORKFLOW → REVIEW</p>
+        </div>
+        <div class="project-content" id="project-panel" role="tabpanel" aria-labelledby="tab-tide" tabindex="0">
+          <div class="media-player" id="project-media" data-theme="tide" aria-label="Tide in a Cup video player">
+  <div class="frame-top"><span id="frame-label">STUDY 01 / TIDE IN A CUP</span><span id="frame-status">SELECTED FILM</span></div>
+  <video id="project-video" width="1728" height="960" controls playsinline preload="none" poster="assets/projects/tide/poster.webp" src="assets/projects/tide/video.mp4" aria-label="Tide in a Cup video">Your browser does not support inline video. <a href="assets/projects/tide/video.mp4">Open Tide in a Cup</a>.</video>
+  <p id="video-error" class="media-error" role="status" hidden>The video could not be loaded. Use Download original below to open the file.</p>
+  <div class="frame-bottom"><span id="media-duration">08.00 SEC</span><span>STUDY / <span id="frame-number">01</span></span></div>
+</div>
+<div class="playback-tools"><p id="playback-note">Selected original MP4 · Generated environmental audio</p><a id="download-video" href="assets/projects/tide/video.mp4" download>Download original ↓</a></div>
+<div class="project-description"><div><p class="status-label" id="project-status">Selected film · Motion V2</p><h3 id="project-title">Tide in a Cup</h3><p id="project-summary">An ocean contained in an espresso cup. A fast, low camera journey turns a familiar café object into an impossible landscape, then returns to the cup to reveal its miniature scale.</p></div><a class="corner-link" href="#process" aria-label="View process evidence">PROCESS<br><span aria-hidden="true">↘</span></a></div>
+          <div class="contribution-line"><span>CREATIVE DIRECTION &amp; PROCESS</span><p id="project-contribution">I completed this project individually, from the creative brief and testing to review and final selection.</p></div>
+        </div>
+      </div>
+      <p class="evidence-note">The two V2 films are the confirmed selection. CG2S and C10 V10 remain supporting archive studies. Insight (Nullified), Saya (Absolution) and Mimu extend the collection with animation, screen removal and colour-spill cleanup; each record distinguishes generation from the final composite.</p>
+    </section>
+
+    <section class="process section-width section-space" id="process" aria-labelledby="process-title">
+      <div class="section-heading"><div><p class="section-kicker"><span class="chapter-no">03</span> FROM IDEA TO EVIDENCE</p><h2 id="process-title">Behind the selected shot</h2></div><p class="active-project-label">CURRENT STUDY / <span id="process-project">Tide in a Cup</span></p></div>
+      <p class="section-intro">Explore the saved workflow, original prompt and two timecoded frames from the current study. Change the project above to view its evidence.</p>
+      <p class="research-note section-intro" id="production-approach">I completed these projects independently, with AI assistance for prompt development, workflow preparation and processing. I set the creative direction and reviewed the results. The illustrated studies adapt existing Arcaea and CHUNITHM artwork; the original artists and source evidence are listed in <a href="#references">References</a>.</p>
+      <div id="process-content"><div class="process-grid evidence-grid">
+    <figure class="workflow-slot">
+      <div class="slot-heading"><span>PRODUCTION WORKFLOW</span><span class="slot-code">ENGLISH NODES</span></div>
+      <div class="workflow-image"><img src="assets/projects/tide/workflow.webp" alt="Tide in a Cup saved production workflow overview" loading="lazy" decoding="async" data-preview-title="Tide in a Cup · Workflow overview" data-preview-caption="Offline rendering / Click for full resolution" data-preview-src="assets/projects/tide/workflow.png"></div>
+      <figcaption><strong>The saved generation graph</strong><span>English-node rendering of the saved workflow. This is an offline diagram, not a screenshot of a running generation session.</span></figcaption>
+      <div class="workflow-sections"><figure><img src="assets/projects/tide/workflow-inputs.webp" alt="Tide in a Cup workflow: Inputs &amp; models" loading="lazy" decoding="async" data-preview-title="Tide in a Cup · Inputs &amp; models" data-preview-caption="Offline workflow detail / Full resolution" data-preview-src="assets/projects/tide/workflow-inputs.png"><figcaption>Inputs & models</figcaption></figure><figure><img src="assets/projects/tide/workflow-sampling.webp" alt="Tide in a Cup workflow: Sampling &amp; refinement" loading="lazy" decoding="async" data-preview-title="Tide in a Cup · Sampling &amp; refinement" data-preview-caption="Offline workflow detail / Full resolution" data-preview-src="assets/projects/tide/workflow-sampling.png"><figcaption>Sampling & refinement</figcaption></figure><figure><img src="assets/projects/tide/workflow-export.webp" alt="Tide in a Cup workflow: Audio &amp; export" loading="lazy" decoding="async" data-preview-title="Tide in a Cup · Audio &amp; export" data-preview-caption="Offline workflow detail / Full resolution" data-preview-src="assets/projects/tide/workflow-export.png"><figcaption>Audio & export</figcaption></figure></div>
+      <p class="slot-footnote">Select an image to read the nodes at full resolution.</p>
+    </figure>
+    <div class="storyboard-slots evidence-frames"><figure class="shot-slot"><img src="assets/projects/tide/frame-a.webp" alt="A blue wave rises beside the white inner wall of the cup. The low viewpoint makes the miniature water feel much larger." loading="lazy" decoding="async" data-preview-title="Tide in a Cup · At wave height" data-preview-caption="Actual video frame / 00:03.00"><figcaption><span class="frame-time">FRAME A / 00:03.00</span><strong>At wave height</strong><p>A blue wave rises beside the white inner wall of the cup. The low viewpoint makes the miniature water feel much larger.</p></figcaption></figure><figure class="shot-slot"><img src="assets/projects/tide/frame-b.webp" alt="The raised viewpoint reveals the handle, tabletop and coffee around the wave, restoring the familiar scale of the cup." loading="lazy" decoding="async" data-preview-title="Tide in a Cup · An ocean in a cup" data-preview-caption="Actual video frame / 00:07.00"><figcaption><span class="frame-time">FRAME B / 00:07.00</span><strong>An ocean in a cup</strong><p>The raised viewpoint reveals the handle, tabletop and coffee around the wave, restoring the familiar scale of the cup.</p></figcaption></figure></div>
+  </div>
+  <div class="production-summary"><div><p class="section-kicker">THE BRIEF</p><p>Explore an impossible transformation through a photographic style, with an eight-second camera journey and recognisable everyday materials.</p></div><dl class="production-specs"><div><dt>Output</dt><dd>1728 × 960 · 24 fps</dd></div><div><dt>Model</dt><dd>FL2VA · BF16</dd></div><div><dt>Base / upscale</dt><dd>0.4 MP · 32 aligned · 2×</dd></div><div><dt>Sampling</dt><dd>20 base steps · Split Sigmas 6</dd></div><div><dt>Refinement</dt><dd>1 extra refiner step</dd></div><div><dt>Seed</dt><dd>1909202601</dd></div></dl></div>
+  <div class="selection-note"><h3>Why I kept V2</h3><p>I kept V2 because later versions had problems with camera movement and how the model interpreted the scene. V2 was closer to what I wanted. My next step is to make the camera direction and scene instructions clearer.</p></div>
+  <details class="record-details"><summary><span>Read the production and selection record</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="record-body"><p>The final selection is the motion V2 output. Later beach-cut and 0.5 MP experiments are not the film displayed here.</p><p>The prompt specifies a flight through the cup handle, a low pass through a curling wave and a rising pull-out. These are production intentions; the actual result can be compared with the frames and film above.</p><p>The saved prompt and workflow match the metadata embedded in this selected MP4. The two frames are moments from the same film, not a before-and-after version comparison.</p><div class="evidence-downloads"><a href="assets/projects/tide/ui.json" download>Download workflow</a><a href="assets/projects/tide/api.json" download>API workflow</a><a href="assets/projects/source-notes.md" target="_blank" rel="noopener">Media credits & provenance ↗</a></div></div></details>
+  <details class="record-details prompt-details"><summary><span>Read the original English prompt</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="record-body"><p class="small-note">The saved generation prompt, reproduced without rewriting. It describes the intended result.</p><pre class="prompt-copy">integrated_multimodal_description: [Shot 1] Photorealistic live-action macro cinematography, a single continuous 8.00-second take. A plain white porcelain espresso cup with one oval handle stands on a worn walnut cafe table in warm morning window light. Dark coffee has a crescent of golden crema. Use the wide perspective of a 24 mm macro probe lens, detailed ceramic glaze, realistic liquid reflections and natural motion blur. The camera follows one unbroken miniature flight path with strong foreground parallax; the environment keeps its scale and geometry. During the first 1.5 seconds, start at tabletop height facing through the empty opening of the cup handle. Accelerate forward through that opening without touching the porcelain, then curve upward outside the cup to clear its rim. As the camera tilts down over the rim, the coffee visibly changes into blue-green seawater and the crema becomes a narrow line of surf; a tiny crescent beach appears along the inside edge. From 1.5 to 5.0 seconds, descend just above the water and race forward into the open hollow of one curling miniature wave. The translucent wave arches overhead like a moving glass tunnel; sunlight flickers through it onto the surface. Keep the bright exit visible ahead, with the cup&#39;s immense-looking white inner wall beyond it. The camera clears the open end before the wave folds down behind it, accompanied by a crisp, small surf crash. From 5.0 to 7.2 seconds, continue forward and climb steeply above the rim, then sweep backward and upward in one broad arc while tilting down to keep the cup centred. This rapid physical pull-out reveals that the apparently huge ocean still fits inside the original espresso cup. Ease the camera speed down to a near hover by 7.2 seconds. Finish in a high three-quarter wide view showing the entire cup, its handle and the surrounding tabletop while miniature ripples reach the tiny beach. The cup and table remain rigid and stationary; only the liquid transforms. All seawater stays inside the cup. Camera acceleration creates the speed changes; the wave moves continuously at natural speed. No cuts, hidden transitions, lens zoom, teleportation, camera passing through solid objects, humans, dialogue, text, logos or illustrated rendering.
+
+overall_soundscape: Low cafe room tone continues throughout, with a short close air swish as the camera passes the handle. Delicate stereo surf grows closer during the low flight, with a brief hollow resonance inside the wave and one synchronized miniature splash behind the camera. As the camera rises, the surf recedes smoothly into the quiet room ambience; no voices.
+
+non_diegetic_music: N/A
+</pre><a class="text-link" href="assets/projects/tide/prompt.txt" download>Download prompt ↓</a></div></details></div>
+      <p class="research-note" id="prompt-research-context">I kept prompts, screenshots and production records to compare versions against the brief. Liu and Chilton’s (2022) text-to-image research provides a framework for thinking about prompt design. The video settings reported here come from my saved workflows. <a href="#ref-liu" aria-label="Read Liu and Chilton reference">[5]</a></p>
+      <details class="record-details research-sources"><summary><span>Prompt and workflow references</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="record-body">
+        <p>MiniMax's base prompt guide provides context for the timelines, camera instructions and audio fields in Tide in a Cup and Sky Whale. <a href="#ref-h3-base">[11]</a> The reference-media guide explains subject definitions and preservation instructions that help readers interpret the illustrated studies' prompts. <a href="#ref-h3-reference">[12]</a></p><p>The H3 model repository and ComfyUI tutorial explain model setup and node-based workflows. <a href="#ref-h3-model">[10]</a> <a href="#ref-comfy-h3">[15]</a> The actual sampling settings and two-pass process come from the saved local workflows. The API and CLI guides provide supplementary context for other ways of submitting video tasks. <a href="#ref-h3-api">[13]</a> <a href="#ref-h3-cli">[14]</a></p><p>The supplied research guides also point to benjiyaya's prompt skill for structured prompt preparation and ethanfel's ComfyUI guide for reference roles and shot planning. These are supplementary reading alongside the production records. <a href="#ref-prompt-skill">[16]</a> <a href="#ref-comfy-guide">[17]</a></p></div></details>
+    </section>
+
+    <section class="profile-band section-space" id="profile" aria-labelledby="profile-title">
+      <div class="section-width">
+        <div class="section-heading"><div><p class="section-kicker"><span class="chapter-no">04</span> PROFESSIONAL IDENTITY</p><h2 id="profile-title">What I bring to the work</h2></div><span class="profile-mark" aria-hidden="true">↗</span></div>
+        <p class="profile-intro">I'm Howard Xu, a Media and Communication student exploring AI video through independent projects. Gorbatov et al. (2018) discuss how people present their skills to a target audience. <a href="#ref-gorbatov">[4]</a> Here, the finished clips and production records show the skills I am developing and how I work.</p>
+        <dl class="profile-facts" aria-label="Student profile">
+          <div><dt>Name</dt><dd>Howard Xu</dd></div>
+          <div><dt>Field of study</dt><dd>Media and Communication</dd></div>
+          <div><dt>Study status</dt><dd>Current student</dd></div>
+
+        </dl>
+        <article class="profile-story" aria-labelledby="profile-story-title">
+          <h3 id="profile-story-title">Learning through AI video</h3>
+          <p>My interest in AI video began while I was browsing videos in my spare time. I wanted to explore how changes in an image could hold a viewer's attention, so I started combining everyday scenes with surreal ideas. My early experiments focused on editing existing content and using first and last frames to guide new sequences. Unfamiliar nodes, models and concepts often led to disappointing results. I taught myself the workflow through small tests with lower generation settings, gradually learning how the different parts worked together.</p>
+          <p>As I experimented, I noticed that striking visuals and complex camera movements could make the subject harder to follow. I began thinking more carefully about the audience and what I wanted to communicate. I separated each prompt into its subject, environment, action and camera path, then adjusted these elements one at a time. I kept screenshots and production records to compare visual continuity and narrative clarity across versions before choosing the work to present.</p>
+
+          <div class="profile-story-links"><a href="#process">Explore the production records ↗</a><a href="#work">View the selected studies ↗</a></div>
+        </article>
+        <div class="profile-skills profile-course"><h3>What my studies influenced</h3><p>My Media and Communication studies helped me think about a video's audience and purpose. I check whether viewers can follow the subject and understand what changes, and record why I make revisions. Reflection helps me decide what to work on next.</p></div>
+        <div class="profile-skills"><h3>Skills in practice</h3><p>Prompt development, ComfyUI workflow testing, video editing and visual review, supported by version documentation and comparison.</p></div>
+      </div>
+    </section>
+
+    <section class="criteria section-width section-space" id="criteria" aria-labelledby="criteria-title">
+      <div class="criteria-heading"><p class="section-kicker"><span class="chapter-no">05</span> THE ROLE</p><h2 id="criteria-title">Where the work <br>meets the brief</h2><p>Canva is an online design and publishing platform. <a href="#ref-canva">[1]</a> Its AI Video Lead advertisement asks for visual storytelling, confident use of AI tools and sound production judgement. <a href="#ref-role">[2]</a> Canva Shield outlines the company's approach to safety and privacy in its AI products. <a href="#ref-shield">[3]</a></p><a href="#ref-role" class="text-link">View the source <span aria-hidden="true">↗</span></a><p class="small-note">These records show my individual production process, from the brief and iteration to selection and delivery.</p></div>
+      <div class="criteria-list">
+        <details open><summary><span class="criterion-no">01</span><span>Visual storytelling</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>Tide in a Cup moves from a water-level view at 00:03 to the complete cup at 00:07. Sky Whale uses an explorer at 00:01 to establish scale before moving close to the whale at 00:04. <a href="#process">View the timecoded frames.</a></p><span class="criterion-tag">CONNECT TO / SELECTED SHOTS</span></div></details>
+        <details><summary><span class="criterion-no">02</span><span>AI tools and prompting</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>The selected V2 films include their original English prompts and ComfyUI workflows: MiniMax H3 FL2VA BF16, two-pass sampling and no first- or last-frame image inputs.</p><span class="criterion-tag">CONNECT TO / PRODUCTION WORKFLOW</span></div></details>
+        <details><summary><span class="criterion-no">03</span><span>Quality judgement and iteration</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>I compared versions against the camera movement and scene I had intended. The Tide in a Cup and Sky Whale records explain my selections and the instructions I want to improve. <a href="#work">View the project records.</a></p><span class="criterion-tag">CONNECT TO / SELECTION RECORD</span></div></details>
+        <details><summary><span class="criterion-no">04</span><span>Delivery from a brief</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>The two briefs call for contrasting photographic and realistic game-cinematic styles, around eight and twelve seconds. The selected files run for 8.00 and 12.25 seconds. Their seeds, settings, prompts and workflow exports are retained with the finished media.</p><span class="criterion-tag">CONNECT TO / PROJECT RECORD</span></div></details>
+        <details><summary><span class="criterion-no">05</span><span>Creative direction</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>I asked for faster camera travel and a continuous shot for Sky Whale. For Tide in a Cup, I also tested cutting directly to a beach. I reviewed these experiments and chose the V2 films for the portfolio. The records retain my direction and the resulting versions.</p><span class="criterion-tag">CONNECT TO / REVIEW NOTES</span></div></details>
+        <details><summary><span class="criterion-no">06</span><span>Learning new tools</span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="criterion-body"><p>I have tried illustrated loops, photographic transformation and a realistic game cinematic. The saved workflows show how I approached each. Next I want to record my reviews using the same criteria across projects: camera continuity, visual stability and whether each result meets its brief.</p><span class="criterion-tag">CONNECT TO / DEVELOPMENT PLAN</span></div></details>
+      </div>
+    </section>
+
+
+
+    <section class="references section-width section-space" id="references" aria-labelledby="references-title">
+      <div class="section-heading"><div><p class="section-kicker"><span class="chapter-no">06</span> RESEARCH & ATTRIBUTION</p><h2 id="references-title">References</h2></div><span class="reference-format">SOURCES & DOCUMENTATION</span></div>
+      <ol class="reference-list">
+        <li id="ref-canva"><span class="ref-no">01</span><p>Canva. (n.d.-a). <em>About Canva.</em> <a href="https://www.canva.com/about/" target="_blank" rel="noopener noreferrer">https://www.canva.com/about/</a></p></li>
+        <li id="ref-role"><span class="ref-no">02</span><p>Canva. (n.d.-b). <em>AI video lead - 12 month FTC</em> [Job advertisement]. Canva Careers. <a href="https://www.lifeatcanva.com/en/jobs/6000000001340200/ai-video-lead-12-month-ftc/" target="_blank" rel="noopener noreferrer">https://www.lifeatcanva.com/en/jobs/6000000001340200/ai-video-lead-12-month-ftc/</a></p></li>
+        <li id="ref-shield"><span class="ref-no">03</span><p>Canva Team. (2026, January). <em>Canva Shield: Safe, fair and secure AI.</em> Canva. <a href="https://www.canva.com/newsroom/news/safe-ai-canva-shield/" target="_blank" rel="noopener noreferrer">https://www.canva.com/newsroom/news/safe-ai-canva-shield/</a></p></li>
+        <li id="ref-gorbatov"><span class="ref-no">04</span><p>Gorbatov, S., Khapova, S. N., &amp; Lysova, E. I. (2018). Personal branding: Interdisciplinary systematic review and research agenda. <em>Frontiers in Psychology, 9</em>, Article 2238. <a href="https://doi.org/10.3389/fpsyg.2018.02238" target="_blank" rel="noopener noreferrer">https://doi.org/10.3389/fpsyg.2018.02238</a></p></li>
+        <li id="ref-liu"><span class="ref-no">05</span><p>Liu, V., &amp; Chilton, L. B. (2022). Design guidelines for prompt engineering text-to-image generative models. In <em>Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems</em> (pp. 1–23). Association for Computing Machinery. <a href="https://doi.org/10.1145/3491102.3501825" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3491102.3501825</a></p></li>
+        <li id="ref-mimu"><span class="ref-no">06</span><p>SEGA. (n.d.). <em>導師 ミィム・ミクラー</em> [Character profile; illustrator: 煎茶]. CHUNITHM. <a href="https://chunithm.sega.jp/character/#/chunithm/%E5%B0%8E%E5%B8%AB%E3%83%9F%E3%82%A3%E3%83%A0%E3%83%BB%E3%83%9F%E3%82%AF%E3%83%A9%E3%83%BC" target="_blank" rel="noopener noreferrer">CHUNITHM official character page</a><span class="reference-context artwork-attribution">Mimu · CHUNITHM · Original illustration: 煎茶 (Sencha), credited on SEGA’s official character page. © SEGA.</span></p></li>
+        <li id="ref-partners"><span class="ref-no">07</span><p>Arcaea Wiki contributors. (n.d.-a). <em>パートナー/恒常</em> [Main-story partners: Saya (Absolution) and Insight (Nullified)]. WIKIWIKI. <a href="https://wikiwiki.jp/arcaea/パートナー/恒常" target="_blank" rel="noopener noreferrer">Arcaea Japanese community wiki</a><span class="reference-context artwork-attribution">Saya (Absolution) and Insight (Nullified). Arcaea illustrations attributed to すずなし (Suzunashi) in this community source. © lowiro.</span></p></li>
+        <li id="ref-story"><span class="ref-no">08</span><p>Arcaea Wiki contributors. (n.d.-b). <em>Divine Oblivion</em> [Story and illustration credits]. WIKIWIKI. <a href="https://wikiwiki.jp/arcaea/ストーリー/Main%20Story%20Act%20II/Divine%20Oblivion" target="_blank" rel="noopener noreferrer">Divine Oblivion: C-8 and C-10</a><span class="reference-context artwork-attribution">C10 V10 · Arcaea, Divine Oblivion C-10-1 · Illustration: すずなし (Suzunashi), attributed in this community source. © lowiro.</span></p></li>
+        <li id="ref-cg2s"><span class="ref-no">09</span><p>Rhythm Archive. (n.d.). <em>Divine Oblivion: cat_8_1.jpg</em> [Arcaea scene archive]. <a href="https://rhythmarchive.github.io/r/658f47cd-0e3a-78f6-9385-671a64e485c1/" target="_blank" rel="noopener noreferrer">C-8 source-scene record</a><span class="reference-context artwork-attribution">CG2S · Arcaea, Divine Oblivion C-8 · Illustration: すずなし (Suzunashi), confirmed by the portfolio creator. This archive identifies the source scene. © lowiro.</span></p></li>
+        <li id="ref-h3-model"><span class="ref-no">10</span><p>MiniMax. (n.d.-a). <em>MiniMax-H3.</em> [Model and software documentation]. GitHub. <a href="https://github.com/MiniMax-AI/MiniMax-H3" target="_blank" rel="noopener noreferrer">MiniMax-AI/MiniMax-H3</a><span class="reference-context">Official model repository · Model variants and local deployment background.</span></p></li>
+        <li id="ref-h3-base"><span class="ref-no">11</span><p>MiniMax. (n.d.-b). <em>Video prompt writing guide (T2VA / I2VA / FL2VA / L2VA).</em> [Prompt guide]. Hugging Face. <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_base_en.md" target="_blank" rel="noopener noreferrer">Video prompt writing guide (T2VA / I2VA / FL2VA / L2VA)</a><span class="reference-context">Official prompt guide · Visual timelines, camera movement and separate audio descriptions.</span></p></li>
+        <li id="ref-h3-reference"><span class="ref-no">12</span><p>MiniMax. (n.d.-c). <em>Full-reference mode rewrite output format guide.</em> [Reference-media prompt guide]. Hugging Face. <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/docs/VIDEO_PROMPT_WRITING_GUIDE_ref_en.md" target="_blank" rel="noopener noreferrer">Full-reference mode rewrite output format guide</a><span class="reference-context">Official reference guide · Subject definitions, reference roles and preservation instructions; reading alongside the reference-based character prompts.</span></p></li>
+        <li id="ref-h3-api"><span class="ref-no">13</span><p>MiniMax. (n.d.-d). <em>Video generation.</em> [API documentation]. MiniMax API Docs. <a href="https://platform.minimax.io/docs/guides/video-generation" target="_blank" rel="noopener noreferrer">Video generation</a><span class="reference-context">Official API documentation · Hosted video-generation context and input modes.</span></p></li>
+        <li id="ref-h3-cli"><span class="ref-no">14</span><p>MiniMax. (n.d.-e). <em>MiniMax-H3 video agent guide.</em> [CLI reference]. GitHub. <a href="https://github.com/MiniMax-AI/cli/blob/main/skill/h3-video/references/h3-video.md" target="_blank" rel="noopener noreferrer">MiniMax-AI/cli/blob/main/skill/h3-video/references/h3-video.md</a><span class="reference-context">Official CLI reference · Supplementary reading about preparing and submitting H3 tasks through the CLI.</span></p></li>
+        <li id="ref-comfy-h3"><span class="ref-no">15</span><p>Comfy Org. (n.d.). <em>ComfyUI MiniMax H3 视频生成指南.</em> [ComfyUI MiniMax H3 video generation guide]. ComfyUI documentation. <a href="https://docs.comfy.org/zh/tutorials/video/minimax/minimax-h3" target="_blank" rel="noopener noreferrer">ComfyUI MiniMax H3 视频生成指南</a><span class="reference-context">Official ComfyUI tutorial · Node-based local workflow examples and model setup.</span></p></li>
+        <li id="ref-prompt-skill"><span class="ref-no">16</span><p>benjiyaya. (n.d.). <em>Minimax-H3-Prompt-AgentSkill.</em> [Source-code repository]. GitHub. <a href="https://github.com/benjiyaya/Minimax-H3-Prompt-AgentSkill" target="_blank" rel="noopener noreferrer">benjiyaya/Minimax-H3-Prompt-AgentSkill</a><span class="reference-context">Community project · Supplementary research on prompt routing and structured preparation.</span></p></li>
+        <li id="ref-comfy-guide"><span class="ref-no">17</span><p>ethanfel. (n.d.). <em>ComfyUI-MiniMax-H3-Guide.</em> [Source-code repository]. GitHub. <a href="https://github.com/ethanfel/ComfyUI-MiniMax-H3-Guide" target="_blank" rel="noopener noreferrer">ethanfel/ComfyUI-MiniMax-H3-Guide</a><span class="reference-context">Community project · Supplementary research on reference roles and shot planning in ComfyUI.</span></p></li>
+      </ol>
+      <details class="record-details preparation-note" hidden><summary><span></span><span class="detail-sign" aria-hidden="true">+</span></summary><div class="record-body"></div></details>
+    </section>
+  </main>
+  <footer class="site-footer section-width"><a class="brand footer-brand" href="#top">Howard Xu <span aria-hidden="true">↑</span></a><p class="assessment-title">Assessment 2: Media Skills Project</p></footer>
+  <dialog id="image-dialog" aria-labelledby="image-dialog-title" aria-describedby="image-save-hint">
+    <div class="image-dialog-header"><div class="image-heading"><p class="section-kicker" id="image-dialog-caption">IMAGE PREVIEW</p><h2 id="image-dialog-title">Image preview</h2></div><button id="close-image" type="button" aria-label="Close image preview" autofocus>×</button></div>
+    <div class="image-toolbar"><div class="image-size-controls" role="group" aria-label="Image size"><button type="button" data-image-scale="fit" aria-pressed="true">Fit to width</button><button type="button" data-image-scale="actual" aria-pressed="false">100%</button></div><a id="image-original" target="_blank" rel="noopener noreferrer">Open original <span aria-hidden="true">↗</span></a></div>
+    <div class="image-preview-stage" id="image-preview-stage" tabindex="0" role="region" aria-label="Image; scroll to explore" data-scale="fit"><img id="preview-image" alt="" data-no-preview decoding="async"><p id="image-preview-status" role="status" hidden></p></div>
+    <div class="image-dialog-footer"><p id="image-save-hint">Right-click or touch and hold the image to save.</p><p id="image-preview-source" hidden>Source: <a id="image-source-link" target="_blank" rel="noopener noreferrer"></a></p></div>
+  </dialog>
+  <noscript><p class="section-width">Project switching and image previews require JavaScript. The first film and its evidence, all application sections and the <a href="assets/canva-job-ad.png" target="_blank" rel="noopener">original advertisement image</a> remain available to read.</p></noscript>
+</body>
+</html>

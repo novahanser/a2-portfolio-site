@@ -1,0 +1,25 @@
+subject_definitions:
+<Picture 1> is the supplied red-background full-body character illustration, defining the character, clothing, ornaments, opening pose and framing. <Picture 2> is the identical ending image. <Subject 1> is the illustrated woman in these images.
+
+summary:
+[keyframe completion + reference generation] A silent 10.13-second single-shot full-body loop. The loose fabric makes one broad, very slow sway around a motionless character. Her small floral jewelry and rigid metal ornaments retain their original shapes.
+
+retention_analysis:
+<Picture 1> ([Shot 1] opening and design): fully_preserved - character design, costume construction, accessories, palette and composition.
+<Picture 2> ([Shot 1] ending): fully_preserved - the same framing, pose and fabric configuration.
+<Subject 1> (throughout [Shot 1]): fully_preserved - identity, anatomy, ornament dimensions and clothing attachment points.
+
+detailed_description:
+[Shot 1] A fixed full-body view, matching <Picture 1> throughout. The camera, framing, focal length, exposure and character scale remain constant. The complete sword, head, boots and costume stay within the frame. The flat background remains the same uniform saturated red RGB(255,0,0) for every moment. Lighting is neutral and constant; the white costume, mint hair and teal lining retain their original colors and clean edges.
+
+The head, face, bodice, hips, legs, feet and lowered hand stay in their opening positions. The small floral jewelry covering the missing eye, the chest flowers and the flowers in the headpiece remain still and keep their original size, petal silhouette and centers. The covered eye is absent; only the original green eye remains visible. The two matching floating ornaments behind the waist have stiff white metal petal plates joined to rigid circular frames. Their flexibility is very low: each plate retains its original length, width, thickness and curvature, with only negligible elastic give. The plates and their frame move together as one solid assembly, maintaining the same internal angles and tip directions. Both ornaments make only a very small, slow vertical float, preserving their original mirror symmetry, spacing and overall orientation. The metal surfaces remain firm as the nearby cloth sways; the plates do not flutter, fold, twist, stretch or flap independently.
+
+The loose skirt panels and broad sleeve fabric perform one extremely slow, sweeping sway. This is heavy, supple fabric: the middle of each panel bends visibly into a long curve, the teal lining follows the white outer layer, and broad folds progress smoothly towards the pleated ends. The waist and shoulder seams remain anchored. Most movement occurs in the hanging middle sections and long hems, with a short natural delay between them. The hems remain recognizably the same weighty ruffles as in the opening image. Fabric length, seams and attached floral decorations remain intact.
+
+During 0-5 seconds, all these loose fabric panels gradually sweep outward and rise into one broad, rounded curve. Their slowest change of direction occurs around 5 seconds. During 5-10.13 seconds, the same panels gently sweep back and lower into their opening drape. The sleeve and skirt share this single slow cycle. The motion is flowing and clearly visible, with soft continuous folds, a wide travel distance and a very low speed. Hair tips and loose ribbon tails follow this same sway at a smaller amplitude; their roots, bow knots and flowers remain anchored. The scalloped strip behind the lowered hand bends with the garment because it is an attached part of the clothing. The sword and gripping hand together make only a barely perceptible vertical drift, keeping the original grip and blade shape.
+
+End on <Picture 2>, smoothly completing the same cloth movement and returning to the opening composition. The red field stays flat and unchanged, and the small fixed floral jewelry retains the same dimensions from beginning to end.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A

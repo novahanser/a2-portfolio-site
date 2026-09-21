@@ -1,0 +1,41 @@
+/* Reference-pack pointers at 50% size. Native cursors; no DOM follower or halo. */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: url("assets/cursor-infalsus-default-half.svg") 8 8, auto;
+  }
+
+  /* Keep the image viewer's zoom, image and toolbar cursor rules intact. */
+  a:not(:where(dialog *)),
+  button:not(:where(dialog *)),
+  summary:not(:where(dialog *)),
+  [role="tab"]:not(:where(dialog *)),
+  a *:not(:where(dialog *)),
+  button *:not(:where(dialog *)),
+  summary *:not(:where(dialog *)),
+  [role="tab"] *:not(:where(dialog *)) {
+    cursor: url("assets/cursor-infalsus-link-half.svg") 8 8, pointer;
+  }
+
+  input:not([type="button"]):not([type="submit"]):not([type="reset"]),
+  textarea,
+  [contenteditable="true"] {
+    cursor: text;
+  }
+
+  .previewable-image {
+    cursor: zoom-in;
+  }
+
+  button:disabled,
+  button:disabled *,
+  [aria-disabled="true"],
+  [aria-disabled="true"] * {
+    cursor: default;
+  }
+}
+
+@media (forced-colors: active) {
+  body, body * { cursor: auto !important; }
+  input, textarea, [contenteditable="true"] { cursor: text !important; }
+  .previewable-image { cursor: zoom-in !important; }
+}

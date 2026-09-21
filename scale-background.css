@@ -1,0 +1,36 @@
+/* 01 / triangular tessellation. The small tiles are cached on a canvas;
+   scale-background.js gently depresses tiles around the mouse, then restores them. */
+@media screen {
+  body { background:#0d1725; }
+  .palette-blue { background:radial-gradient(ellipse at 12% 12%,#2b71932e,transparent 65%),linear-gradient(128deg,#142a40,#0c1a2c 60%,#1b263f); }
+  .palette-red { background:radial-gradient(ellipse at 18% 85%,#bb51652e,transparent 65%),linear-gradient(128deg,#40263a,#2b192c 60%,#4a2939); }
+  .scale-background {
+    position:absolute; z-index:0; inset:-184px 0; opacity:.3712;
+    overflow:hidden; pointer-events:none;
+  }
+  .ambient-wash { z-index:1; }
+  .ambient-topology { z-index:2; inset:-128px 0; opacity:.68; }
+  .ambient-glass { z-index:3; }
+  #particle-field { z-index:4; }
+  .pattern--a .weave-field {
+    position:absolute; inset:0; width:100%; height:100%; display:block;
+  }
+  .pattern--a .weave-light {
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at 22% 38%,rgb(143 203 211 / .075),transparent 65%),linear-gradient(125deg,transparent 25%,rgb(154 171 203 / .025) 55%,transparent 80%);
+  }
+}
+@media screen and (max-width:700px) {
+  .scale-background { inset:-120px 0; opacity:.3072; }
+  .ambient-topology { inset:-88px 0; opacity:.56; }
+}
+body[data-scene-motion="running"] .scale-background { will-change:transform; }
+@media (prefers-reduced-motion:reduce) {
+  .scale-background { will-change:auto!important; }
+}
+@media (prefers-reduced-transparency:reduce),(prefers-contrast:more) {
+  .scale-background { display:none; }
+}
+@media (forced-colors:active),print {
+  .scale-background { display:none!important; }
+}

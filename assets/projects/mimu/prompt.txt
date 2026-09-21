@@ -1,0 +1,36 @@
+subject_definitions:
+<Picture 1> is the prepared full-body illustration on a pure green #00FF00 background, with the shortened purple ribbon and completed lower-left hair. It is the sole reference for the foreground design, painted style and 3:4 composition, and the first-frame and last-frame anchor for [Shot 1].
+<Subject 1> is the character in <Picture 1>, with two pink-violet eyes, long pale-silver hair with pink and pale-lilac highlights, floral head ornament, layered white-and-pink skirt, pale legwear and flowered shoes.
+<Subject 2> is the complete diagonal staff in <Picture 1>, including both gold-rimmed pink-violet head elements and the straight shaft ending in a gold cap at the lower right.
+<Subject 3> is the large gold key ornament at the waist in <Picture 1>, including its circular floral frame and amber jewel.
+<Subject 4> is the shortened purple ribbon in the lower-right part of <Picture 1>. Its flat strip curves toward the legs and ends in a tapered fabric tip beside the higher, image-left flowered shoe, the character's right shoe.
+<Subject 5> is the flat, unlit, uniform #00FF00 green background in <Picture 1>, including the genuine open gaps between foreground objects.
+
+summary:
+[keyframe completion + reference generation] A silent 10.13-second, single-shot, fixed-camera 3:4 full-body illustration loop. <Subject 1>'s long hair and hanging skirt, with <Subject 4>, make one modest, clearly visible, slow outward-and-return sway. The face, eyes and original body pose remain stable; <Subject 2> and <Subject 3> remain rigid. <Picture 1> anchors both ends. <Subject 5> keeps exactly the same uniform green throughout.
+
+retention_analysis:
+<Picture 1> ([Shot 1] first and last frames): fully_preserved - prepared green background, edited foreground design, original endpoint pose, proportions, painted detail and full-body composition.
+<Subject 1> (throughout [Shot 1]): fully_preserved - identity, expression, open eyes, anatomy, pale-silver hair, painted highlights, complete lower-left locks, costume layers, ornaments and attachment points.
+<Subject 2> (throughout [Shot 1]): fully_preserved - complete straight shaft, gold end cap, head elements, gold rims, dimensions, angle and grip.
+<Subject 3> (throughout [Shot 1]): fully_preserved - key silhouette, circular frame, floral relief, amber jewel and position relative to the waist.
+<Subject 4> (throughout [Shot 1]): fully_preserved - shortened length, flat purple surface, two edges, natural free tip and reference overlap order.
+<Subject 5> (throughout [Shot 1]): fully_preserved - one constant #00FF00 color, spatially uniform and unchanged across all frames and all revealed background gaps.
+
+detailed_description:
+Preserve the detailed 2D fantasy-game illustration style, fine outlines, pearly painted shading and original silver, lilac, pink, white and gold palette. Foreground illumination remains steady.
+
+[Shot 1] Begin on <Picture 1> in a fixed 3:4 full-body view containing every hair tip, both shoes, both staff head elements and the lower-right gold staff cap, with clearance for motion. Camera position, focal length, framing, exposure, white balance and character scale remain fixed. <Subject 5> is an unlit graphic color field, #00FF00, RGB(0,255,0). Its hue, saturation and luminance remain identical everywhere and throughout all 10.13 seconds. Every newly revealed background gap immediately shows this same green. No shadows, gradients, vignette, haze, bloom, reflected colors, illumination changes or temporal color drift appear in the field. Foreground highlights cast no light onto it; green casts no tint onto the character.
+
+<Subject 1> retains the head angle, two open eyes, gaze, closed-mouth smile and limb pose. Horizontal body placement stays fixed; any residual vertical travel is at most 1% of frame height, following this single slow cycle. Hair roots, head ornament, waist attachments and garment seams remain anchored to the body. <Subject 2> and <Subject 3> follow only that tiny body offset, retaining their shapes, original angle, grip and waist relationship. Their painted highlights and jewel brightness remain constant.
+
+The long hair bends visibly through its middle sections into broad, soft curves. Completed lower-left locks remain continuous to their tapering tips. Pale-silver hair stays opaque: pink and lilac highlights remain painted within each lock, preserving its full silhouette and fine strand markings. Highlights never erase or thin hair into the green field. The white scalloped skirt panels and pink inner layers flex visibly through their hanging middles, with broad, shallow folds progressing to layered hems. Preserve separate hair, skirt and ribbon contours, panel lengths and layering. Small floral details travel with their supporting cloth.
+
+<Subject 4> bends gently through its existing short length. Its tapered free tip remains identifiable beside the higher shoe, separated from the shoe by open space. Keep both edges, the flat fabric surface and existing overlap order behind the leg or staff. Adjacent silver hair retains its own continuous tapering strands. Genuine open gaps show green; existing hair or fabric surfaces remain intact.
+
+From 0-2.53 seconds, free hair, hanging skirt and short ribbon ease outward a modest, clearly visible distance. From 2.53-5.06 seconds, they continue toward one broad maximum excursion. Reverse gently once near 5.06 seconds, return gradually during 5.06-7.60 seconds, and complete the same return during 7.60-10.13 seconds. Distribute motion smoothly through both halves, with slight natural tip delays and no extra swishes or rebounds. Keep the face, gripping hand and jewel centers unobscured. End on <Picture 1>, restoring hair tips, ribbon endpoint, skirt folds, body pose and composition. Ease smoothly at both ends. The green field remains unchanged; the entire shot is silent.
+
+overall_soundscape: N/A
+
+non_diegetic_music: N/A
+

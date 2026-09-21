@@ -1,0 +1,51 @@
+subject_definitions:
+<Subject 1> is the central young woman in <Picture 1> and <Picture 2>, with short layered teal-black hair, white and pale-cyan layered clothing, lilies beside her face, a seated pose, two anatomically correct visible human hands, and a vertical decorated sword.
+<Subject 2> is the floating ornament behind <Subject 1>, consisting of exactly one circular disc and exactly two petal-shaped loop components rigidly attached to the disc as one complete assembly.
+<Subject 3> is only the collection of small white flecks and tiny pale fragments already visible in <Picture 1> and <Picture 2>. Each existing particle has a specific original position, shape, size, color, opacity, sharpness, and depth layer.
+<Subject 4> is the complete painted background plate shown in <Picture 1> and <Picture 2>, including every color region, painted texture, ruin, pillar, railing, spire, crystal shard, distant structure, foreground framing shape, and blurred edge shape.
+<Picture 1> is the literal first frame of [Shot 1] at 0.00 seconds and defines the exact opening composition, geometry, style, color, exposure, particle distribution, and motion phase.
+<Picture 2> is the literal last frame of [Shot 1] at 10.13 seconds. It is a pixel-identical copy of <Picture 1> after identical preprocessing and defines the exact closing state of the seamless loop.
+
+summary:
+[reference generation + keyframe completion] Create one uninterrupted 10.13-second painterly-anime live-wallpaper loop with a completely static camera. Preserve the character, clothing, sword, rear ornament, and complete background plate from the reference pictures. Strong wind moves the character’s free short hair and loose clothing from screen right to screen left. Within the background, only the particles already present in the reference pictures move, travelling continuously from screen right to screen left.
+
+retention_analysis:
+<Subject 1> (appears throughout [Shot 1]): fully_preserved - preserve the woman’s identity, short hairstyle, face, seated pose, body proportions, clothing design, lilies, hands, fingers, sword grip, and spatial relationships.
+<Subject 2> (appears throughout [Shot 1]): fully_preserved - preserve exactly one disc and exactly two attached petal-shaped loops as one rigid assembly behind the character.
+<Subject 3> (appears throughout [Shot 1]): fully_preserved - preserve the original particle count, shapes, sizes, colors, opacity, sharpness, and depth distribution while changing only their horizontal positions.
+<Subject 4> (appears throughout [Shot 1]): fully_preserved - preserve the complete background as an entirely stationary plate with unchanged geometry, texture, color, opacity, lighting, and depth relationships.
+<Picture 1> ([Shot 1] first frame): fully_preserved - use its exact visible state as the opening frame.
+<Picture 2> ([Shot 1] last frame): fully_preserved - land precisely on its visible state at 10.13 seconds.
+
+detailed_description:
+The target video preserves the exact painterly 2D anime illustration style, delicate linework, pale violet, cyan and white palette, soft painted depth, and existing chromatic-fringe details of the reference pictures.
+
+[Shot 1] The shot begins exactly from <Picture 1>. Hold a completely Static Shot throughout the full 10.13 seconds. Lock camera position, orientation, focal length, perspective, framing, crop, focus plane, depth of field, and all camera-induced parallax.
+
+Treat <Subject 4> as one completely fixed background plate. Every painted background region and every background structure remains in its exact original screen position. There is no background translation, deformation, warping, stretching, texture scrolling, vertical movement, horizontal movement, rotation, scaling, opacity change, or color change. The background does not react to the wind. All ruins, pillars, railings, spires, crystal shards, distant structures, painted color regions, foreground framing shapes, and blurred edge shapes remain completely stationary.
+
+Only <Subject 3>, the particles already visible in the reference pictures, may move within the background. Do not generate any additional particles. Each existing particle remains the same small flat shape with unchanged color, opacity, brightness, sharpness, apparent size, and depth layer.
+
+Every permitted particle travels smoothly and continuously from screen right toward screen left along a nearly horizontal path parallel to the image plane. Its vertical position remains almost constant. Particles do not rise, fall, bounce, orbit, rotate around the character, approach the camera, enlarge, shrink, flash, multiply, disappear inside the frame, or obscure the woman, sword, hands, face, or important background structures.
+
+When an existing particle exits through the left boundary, an identical particle enters naturally through the right boundary at the same vertical position, size, color, opacity, sharpness, and depth layer. Keep the visible particle count, density, spacing, and depth distribution stable throughout. Particle speeds may differ slightly, but all particles maintain the same screen-right-to-screen-left direction.
+
+A strong continuous wind blows from screen right toward screen left across <Subject 1>. Her hairstyle remains visibly short and never grows into long hair. Hair roots, face-crossing bangs, facial features, expression, head, torso, shoulders, arms, legs, and seated pose remain stable. Only the free outer short locks and hair tips bend and sweep strongly toward screen left with large, smooth, clearly readable displacement.
+
+The loose outer garment panels, long free cloth sections, ribbons, and thin hems billow broadly toward screen left with coordinated wave-like deformation and delayed elastic recovery. Attached seams remain anchored. Fabric motion does not pull or deform the torso, shoulders, arms, hands, fingers, or sword. The lilies preserve their main shape and position, with only the smallest free outer edges responding lightly.
+
+Both visible hands remain anatomically correct and nearly motionless. Preserve every finger, joint, spacing, silhouette, and grip. The lower visible hand remains a human hand and does not wave, rise, rotate, stretch, merge with the clothing, or change finger count. The vertical sword remains perfectly straight, rigid, and stationary.
+
+<Subject 2> remains behind the character as one rigid assembly. The circular disc and both attached petal-shaped loops move together with an extremely small horizontal sway, no greater than three percent of the disc diameter. Its vertical position remains locked. It does not bob, rise, sink, rotate, scale, separate, deform, or pass in front of the character or sword.
+
+The short hair and loose clothing complete one smooth periodic wind-response cycle over 10.13 seconds. The rear ornament completes one much smaller synchronized cycle. The particles maintain continuous one-way right-to-left travel and complete their seamless loop through boundary replacement rather than reversing direction.
+
+Lock brightness, exposure, white balance, contrast, saturation, shadow depth, bloom intensity, and average luminance throughout. No sudden darkening, color wash, exposure breathing, flicker, glow pulse, whiteout, moving illumination, vignette, fade, black frame, camera movement, or scene transition.
+
+At exactly 10.13 seconds, the hair, clothing, flower edges, hands, sword, and rear ornament return to their exact opening positions and shapes. The existing particle field returns to the same visible distribution and loop phase as <Picture 1>. The final frame lands precisely on <Picture 2> and connects seamlessly back to <Picture 1> without a jump, flash, frozen hold, or brightness change.
+
+overall_soundscape:
+N/A
+
+non_diegetic_music:
+N/A

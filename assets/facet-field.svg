@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1000" fill="none">
+  <defs>
+    <pattern id="triangles" width="100" height="86.6025" patternUnits="userSpaceOnUse"><path d="M0 0H100L50 86.6025 0 0M0 86.6025 50 0 100 86.6025" stroke="#a1c7d4" stroke-opacity=".24" stroke-width=".65"/></pattern>
+    <linearGradient id="left"><stop stop-color="#426277" stop-opacity=".22"/><stop offset="1" stop-color="#0a121d" stop-opacity="0"/></linearGradient>
+    <linearGradient id="right"><stop stop-color="#759aaa" stop-opacity="0"/><stop offset="1" stop-color="#759aaa" stop-opacity=".18"/></linearGradient>
+  </defs>
+  <path d="M0 500 275 380 175 1000H0Z" fill="url(#left)"/>
+  <path d="m1000 205 440 45v460l-340-150Z" fill="url(#right)"/>
+  <path d="M0 720h340L180 1000H0Zm1200-460h240v470h-155l-140-240Z" fill="url(#triangles)"/>
+  <path d="M-70 190 370-90 105 435Z" fill="#050b14" fill-opacity=".5" stroke="#c0deed" stroke-opacity=".1"/>
+  <path d="m-70 190 267-108-92 353Z" fill="#517082" fill-opacity=".075"/>
+  <path d="m1170 105 350 640-306-153Z" fill="#07101b" fill-opacity=".5" stroke="#b0d4df" stroke-opacity=".13"/>
+  <path d="m1170 105 44 487 169-217Z" fill="#637f92" fill-opacity=".065"/>
+  <path d="m140 790 250-230-92 440Z" stroke="#b0d4df" stroke-opacity=".085"/>
+  <path d="m0 500 1440-120M0 840l1440-115" stroke="#789bac" stroke-opacity=".045"/>
+</svg>

@@ -1,0 +1,717 @@
+{
+  "280": {
+    "inputs": {
+      "samples": [
+        "284",
+        0
+      ],
+      "vae": [
+        "290",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "视频 VAE 解码"
+    }
+  },
+  "282": {
+    "inputs": {
+      "image": "01_導師 ミィム・ミクラー_短丝带_发丝完整_v2_绿幕原图.png"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "纯绿 RGB 输入｜完整画布直接加载，不读 alpha"
+    },
+    "is_changed": [
+      "f1d9616ec71d535cf35d6d2306dc07764caaf76804df2ad1cf148b7e974f1d85"
+    ]
+  },
+  "283": {
+    "inputs": {
+      "value": 10.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "目标时长（秒）｜自动对齐 H3 帧格"
+    }
+  },
+  "284": {
+    "inputs": {
+      "noise": [
+        "307",
+        0
+      ],
+      "guider": [
+        "341",
+        0
+      ],
+      "sampler": [
+        "322",
+        0
+      ],
+      "sigmas": [
+        "332",
+        1
+      ],
+      "latent_image": [
+        "303",
+        0
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "二采｜使用切分后的剩余 Sigma"
+    }
+  },
+  "285": {
+    "inputs": {
+      "unet_name": "minimax_h3_fl2va_bf16.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "FL2VA 完整 BF16｜首尾帧主模型"
+    }
+  },
+  "286": {
+    "inputs": {
+      "clip_name": "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "type": "minimax",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "文本编码器"
+    }
+  },
+  "288": {
+    "inputs": {
+      "shift_video": 12.0,
+      "shift_audio": 3.0,
+      "model": [
+        "343",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3SigmaShift",
+    "_meta": {
+      "title": "Sigma Shift｜12 / 3"
+    }
+  },
+  "290": {
+    "inputs": {
+      "vae_name": "minimax_h3_video_vae_fp16.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "视频 VAE"
+    }
+  },
+  "292": {
+    "inputs": {
+      "expression": "max(5, round(a * 24)) + (5 - (max(5, round(a * 24)) % 17)) % 17",
+      "values.a": [
+        "283",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "帧数｜17n+5 对齐，默认 243 帧"
+    }
+  },
+  "296": {
+    "inputs": {
+      "aspect_ratio": "3:4 (Portrait Standard)",
+      "megapixels": 0.6,
+      "multiple": 32
+    },
+    "class_type": "ResolutionSelector",
+    "_meta": {
+      "title": "一采画幅 / MP｜宽高比 · 百万像素 · 对齐倍数"
+    }
+  },
+  "302": {
+    "inputs": {
+      "model_name": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
+      "mode": "target dimensions",
+      "mode.width": [
+        "338",
+        1
+      ],
+      "mode.height": [
+        "339",
+        1
+      ],
+      "align": 32,
+      "enable_temporal_chunking": true,
+      "force_unload": true,
+      "device": "cuda",
+      "precision": "fp16",
+      "latent": [
+        "318",
+        0
+      ]
+    },
+    "class_type": "MinimaxH3LatentUpscaler3D",
+    "_meta": {
+      "title": "视频 latent 放大｜与二采条件共用目标宽高"
+    }
+  },
+  "303": {
+    "inputs": {
+      "video_latent": [
+        "302",
+        0
+      ],
+      "audio_latent": [
+        "318",
+        1
+      ]
+    },
+    "class_type": "LTXVConcatAVLatent",
+    "_meta": {
+      "title": "重组采样潜变量｜不加载音频 VAE"
+    }
+  },
+  "307": {
+    "inputs": {
+      "noise_seed": 603730895876546
+    },
+    "class_type": "RandomNoise",
+    "_meta": {
+      "title": "随机种子｜当前 randomize；对照测试请改 fixed"
+    }
+  },
+  "318": {
+    "inputs": {
+      "av_latent": [
+        "344",
+        0
+      ]
+    },
+    "class_type": "LTXVSeparateAVLatent",
+    "_meta": {
+      "title": "内部 AV 潜变量拆分"
+    }
+  },
+  "322": {
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "class_type": "KSamplerSelect",
+    "_meta": {
+      "title": "采样器｜沿用当前 Euler"
+    }
+  },
+  "325": {
+    "inputs": {
+      "noise": [
+        "307",
+        0
+      ],
+      "guider": [
+        "327",
+        0
+      ],
+      "sampler": [
+        "322",
+        0
+      ],
+      "sigmas": [
+        "332",
+        0
+      ],
+      "latent_image": [
+        "336",
+        1
+      ]
+    },
+    "class_type": "SamplerCustomAdvanced",
+    "_meta": {
+      "title": "一采｜高 Sigma 生成"
+    }
+  },
+  "326": {
+    "inputs": {
+      "extra_steps": 1,
+      "start_at_sigma": 0.7,
+      "end_at_sigma": 0.0,
+      "spacing": "cosine",
+      "sigmas": [
+        "331",
+        0
+      ]
+    },
+    "class_type": "H3SigmaRefiner",
+    "_meta": {
+      "title": "Sigma refiner | 0 extra steps"
+    }
+  },
+  "327": {
+    "inputs": {
+      "model": [
+        "288",
+        0
+      ],
+      "conditioning": [
+        "336",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "一采引导器"
+    }
+  },
+  "331": {
+    "inputs": {
+      "scheduler": "simple",
+      "steps": 20,
+      "denoise": 1.0,
+      "model": [
+        "288",
+        0
+      ]
+    },
+    "class_type": "BasicScheduler",
+    "_meta": {
+      "title": "26 total steps"
+    }
+  },
+  "332": {
+    "inputs": {
+      "step": 6,
+      "sigmas": [
+        "326",
+        0
+      ]
+    },
+    "class_type": "SplitSigmas",
+    "_meta": {
+      "title": "Sigma split | 20 + 6 steps"
+    }
+  },
+  "336": {
+    "inputs": {
+      "prompt": [
+        "355",
+        0
+      ],
+      "width": [
+        "356",
+        1
+      ],
+      "height": [
+        "357",
+        1
+      ],
+      "length": [
+        "292",
+        1
+      ],
+      "clip": [
+        "286",
+        0
+      ],
+      "vae": [
+        "290",
+        0
+      ],
+      "frame": [
+        "348",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3SameFrameLoop",
+    "_meta": {
+      "title": "一采条件｜同图仅编码一次，共享首尾锚点"
+    }
+  },
+  "337": {
+    "inputs": {
+      "value": 2.0
+    },
+    "class_type": "PrimitiveFloat",
+    "_meta": {
+      "title": "二采放大倍率｜可调；默认 2.0x"
+    }
+  },
+  "338": {
+    "inputs": {
+      "expression": "max(32, round(a * b / 32) * 32)",
+      "values.a": [
+        "356",
+        1
+      ],
+      "values.b": [
+        "337",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "二采宽度｜一采宽 × 放大倍率，32 对齐"
+    }
+  },
+  "339": {
+    "inputs": {
+      "expression": "max(32, round(a * b / 32) * 32)",
+      "values.a": [
+        "357",
+        1
+      ],
+      "values.b": [
+        "337",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "二采高度｜一采高 × 放大倍率，32 对齐"
+    }
+  },
+  "340": {
+    "inputs": {
+      "prompt": [
+        "355",
+        0
+      ],
+      "width": [
+        "338",
+        1
+      ],
+      "height": [
+        "339",
+        1
+      ],
+      "length": [
+        "292",
+        1
+      ],
+      "clip": [
+        "286",
+        0
+      ],
+      "vae": [
+        "290",
+        0
+      ],
+      "frame": [
+        "350",
+        0
+      ]
+    },
+    "class_type": "MiniMaxH3SameFrameLoop",
+    "_meta": {
+      "title": "二采条件｜同图仅编码一次，共享首尾锚点"
+    }
+  },
+  "341": {
+    "inputs": {
+      "model": [
+        "288",
+        0
+      ],
+      "conditioning": [
+        "345",
+        0
+      ]
+    },
+    "class_type": "BasicGuider",
+    "_meta": {
+      "title": "二采专用引导器"
+    }
+  },
+  "342": {
+    "inputs": {
+      "head_chunks": 16,
+      "model": [
+        "285",
+        0
+      ]
+    },
+    "class_type": "MiniMaxLowVRAMAttention",
+    "_meta": {
+      "title": "低显存 Attention｜切片 16"
+    }
+  },
+  "343": {
+    "inputs": {
+      "chunks": 16,
+      "seq_threshold": 4096,
+      "model": [
+        "342",
+        0
+      ]
+    },
+    "class_type": "MiniMaxChunkFeedForward",
+    "_meta": {
+      "title": "前馈分块｜16 / 4096"
+    }
+  },
+  "344": {
+    "inputs": {
+      "empty_cache": true,
+      "gc_collect": true,
+      "unload_all_models": true,
+      "any_input": [
+        "325",
+        1
+      ]
+    },
+    "class_type": "VRAM_Debug",
+    "_meta": {
+      "title": "一采完成｜卸载并清理显存"
+    }
+  },
+  "345": {
+    "inputs": {
+      "empty_cache": true,
+      "gc_collect": true,
+      "unload_all_models": true,
+      "any_input": [
+        "340",
+        0
+      ]
+    },
+    "class_type": "VRAM_Debug",
+    "_meta": {
+      "title": "二采条件完成｜卸载并清理显存"
+    }
+  },
+  "348": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": [
+        "356",
+        1
+      ],
+      "height": [
+        "357",
+        1
+      ],
+      "crop": "disabled",
+      "image": [
+        "362",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "一采共用图｜仅缩放一次"
+    }
+  },
+  "350": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": [
+        "338",
+        1
+      ],
+      "height": [
+        "339",
+        1
+      ],
+      "crop": "disabled",
+      "image": [
+        "362",
+        0
+      ]
+    },
+    "class_type": "ImageScale",
+    "_meta": {
+      "title": "二采共用图｜仅缩放一次"
+    }
+  },
+  "355": {
+    "inputs": {
+      "value": "subject_definitions:\n<Picture 1> is the prepared full-body illustration on a pure green #00FF00 background, with the shortened purple ribbon and completed lower-left hair. It is the sole reference for the foreground design, painted style and 3:4 composition, and the first-frame and last-frame anchor for [Shot 1].\n<Subject 1> is the character in <Picture 1>, with two pink-violet eyes, long pale-silver hair with pink and pale-lilac highlights, floral head ornament, layered white-and-pink skirt, pale legwear and flowered shoes.\n<Subject 2> is the complete diagonal staff in <Picture 1>, including both gold-rimmed pink-violet head elements and the straight shaft ending in a gold cap at the lower right.\n<Subject 3> is the large gold key ornament at the waist in <Picture 1>, including its circular floral frame and amber jewel.\n<Subject 4> is the shortened purple ribbon in the lower-right part of <Picture 1>. Its flat strip curves toward the legs and ends in a tapered fabric tip beside the higher, image-left flowered shoe, the character's right shoe.\n<Subject 5> is the flat, unlit, uniform #00FF00 green background in <Picture 1>, including the genuine open gaps between foreground objects.\n\nsummary:\n[keyframe completion + reference generation] A silent 10.13-second, single-shot, fixed-camera 3:4 full-body illustration loop. <Subject 1>'s long hair and hanging skirt, with <Subject 4>, make one modest, clearly visible, slow outward-and-return sway. The face, eyes and original body pose remain stable; <Subject 2> and <Subject 3> remain rigid. <Picture 1> anchors both ends. <Subject 5> keeps exactly the same uniform green throughout.\n\nretention_analysis:\n<Picture 1> ([Shot 1] first and last frames): fully_preserved - prepared green background, edited foreground design, original endpoint pose, proportions, painted detail and full-body composition.\n<Subject 1> (throughout [Shot 1]): fully_preserved - identity, expression, open eyes, anatomy, pale-silver hair, painted highlights, complete lower-left locks, costume layers, ornaments and attachment points.\n<Subject 2> (throughout [Shot 1]): fully_preserved - complete straight shaft, gold end cap, head elements, gold rims, dimensions, angle and grip.\n<Subject 3> (throughout [Shot 1]): fully_preserved - key silhouette, circular frame, floral relief, amber jewel and position relative to the waist.\n<Subject 4> (throughout [Shot 1]): fully_preserved - shortened length, flat purple surface, two edges, natural free tip and reference overlap order.\n<Subject 5> (throughout [Shot 1]): fully_preserved - one constant #00FF00 color, spatially uniform and unchanged across all frames and all revealed background gaps.\n\ndetailed_description:\nPreserve the detailed 2D fantasy-game illustration style, fine outlines, pearly painted shading and original silver, lilac, pink, white and gold palette. Foreground illumination remains steady.\n\n[Shot 1] Begin on <Picture 1> in a fixed 3:4 full-body view containing every hair tip, both shoes, both staff head elements and the lower-right gold staff cap, with clearance for motion. Camera position, focal length, framing, exposure, white balance and character scale remain fixed. <Subject 5> is an unlit graphic color field, #00FF00, RGB(0,255,0). Its hue, saturation and luminance remain identical everywhere and throughout all 10.13 seconds. Every newly revealed background gap immediately shows this same green. No shadows, gradients, vignette, haze, bloom, reflected colors, illumination changes or temporal color drift appear in the field. Foreground highlights cast no light onto it; green casts no tint onto the character.\n\n<Subject 1> retains the head angle, two open eyes, gaze, closed-mouth smile and limb pose. Horizontal body placement stays fixed; any residual vertical travel is at most 1% of frame height, following this single slow cycle. Hair roots, head ornament, waist attachments and garment seams remain anchored to the body. <Subject 2> and <Subject 3> follow only that tiny body offset, retaining their shapes, original angle, grip and waist relationship. Their painted highlights and jewel brightness remain constant.\n\nThe long hair bends visibly through its middle sections into broad, soft curves. Completed lower-left locks remain continuous to their tapering tips. Pale-silver hair stays opaque: pink and lilac highlights remain painted within each lock, preserving its full silhouette and fine strand markings. Highlights never erase or thin hair into the green field. The white scalloped skirt panels and pink inner layers flex visibly through their hanging middles, with broad, shallow folds progressing to layered hems. Preserve separate hair, skirt and ribbon contours, panel lengths and layering. Small floral details travel with their supporting cloth.\n\n<Subject 4> bends gently through its existing short length. Its tapered free tip remains identifiable beside the higher shoe, separated from the shoe by open space. Keep both edges, the flat fabric surface and existing overlap order behind the leg or staff. Adjacent silver hair retains its own continuous tapering strands. Genuine open gaps show green; existing hair or fabric surfaces remain intact.\n\nFrom 0-2.53 seconds, free hair, hanging skirt and short ribbon ease outward a modest, clearly visible distance. From 2.53-5.06 seconds, they continue toward one broad maximum excursion. Reverse gently once near 5.06 seconds, return gradually during 5.06-7.60 seconds, and complete the same return during 7.60-10.13 seconds. Distribute motion smoothly through both halves, with slight natural tip delays and no extra swishes or rebounds. Keep the face, gripping hand and jewel centers unobscured. End on <Picture 1>, restoring hair tips, ribbon endpoint, skirt folds, body pose and composition. Ease smoothly at both ends. The green field remains unchanged; the entire shot is silent.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A\n\n"
+    },
+    "class_type": "PrimitiveStringMultiline",
+    "_meta": {
+      "title": "短丝带新版｜保留浅色发束 · 纯绿参考"
+    }
+  },
+  "356": {
+    "inputs": {
+      "expression": "max(96, round(a / 96) * 96)",
+      "values.a": [
+        "296",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "3:4 width | 96 alignment"
+    }
+  },
+  "357": {
+    "inputs": {
+      "expression": "a * 4 / 3",
+      "values.a": [
+        "356",
+        1
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "3:4 height | width x 4 / 3"
+    }
+  },
+  "358": {
+    "inputs": {
+      "image": [
+        "282",
+        0
+      ]
+    },
+    "class_type": "GetImageSize",
+    "_meta": {
+      "title": "读取纯绿输入全画布尺寸｜3:4"
+    }
+  },
+  "359": {
+    "inputs": {
+      "expression": "a * 3 / 4",
+      "values.a": [
+        "360",
+        1
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "扩边后宽度｜高度 × 3/4（随50px目标留边）"
+    }
+  },
+  "360": {
+    "inputs": {
+      "expression": "4 * ceil(max(a + 50, (b + 37.5) * 4 / 3) / 4)",
+      "values.a": [
+        "358",
+        1
+      ],
+      "values.b": [
+        "358",
+        0
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "总高度目标 +50px｜精确3:4向上取整"
+    }
+  },
+  "361": {
+    "inputs": {
+      "width": [
+        "359",
+        1
+      ],
+      "height": [
+        "360",
+        1
+      ],
+      "batch_size": 1,
+      "color": 65280
+    },
+    "class_type": "EmptyImage",
+    "_meta": {
+      "title": "扩展画布｜纯绿 #00FF00，保留全幅"
+    }
+  },
+  "362": {
+    "inputs": {
+      "x": [
+        "405",
+        1
+      ],
+      "y": [
+        "406",
+        1
+      ],
+      "resize_source": false,
+      "destination": [
+        "361",
+        0
+      ],
+      "source": [
+        "282",
+        0
+      ]
+    },
+    "class_type": "ImageCompositeMasked",
+    "_meta": {
+      "title": "完整 RGB 居中放置｜无蒙版、不缩放、不裁切"
+    }
+  },
+  "403": {
+    "inputs": {
+      "frame_rate": 24.0,
+      "loop_count": 0,
+      "filename_prefix": "H3_05_Green_01_Mimu_DirectGreen_20260917/green/mimu_seed197875471725214",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 12,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "280",
+        0
+      ]
+    },
+    "class_type": "VHS_VideoCombine",
+    "_meta": {
+      "title": "直接绿底版｜原始生成 MP4 · CRF12"
+    }
+  },
+  "404": {
+    "inputs": {
+      "filename_prefix": "H3_05_Green_01_Mimu_DirectGreen_20260917/prepared_input/mimu_expanded_green",
+      "images": [
+        "362",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "保存扩边绿底参考 PNG｜这是输入，不是 alpha"
+    }
+  },
+  "405": {
+    "inputs": {
+      "expression": "floor((b - a) / 2)",
+      "values.a": [
+        "358",
+        0
+      ],
+      "values.b": [
+        "359",
+        1
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "水平偏移｜按实际扩边宽度居中"
+    }
+  },
+  "406": {
+    "inputs": {
+      "expression": "floor((b - a) / 2)",
+      "values.a": [
+        "358",
+        1
+      ],
+      "values.b": [
+        "360",
+        1
+      ]
+    },
+    "class_type": "ComfyMathExpression",
+    "_meta": {
+      "title": "垂直偏移｜按实际扩边高度居中"
+    }
+  }
+}

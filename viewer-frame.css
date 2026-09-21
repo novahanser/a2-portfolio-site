@@ -1,0 +1,141 @@
+/* Original CSS frame, informed by the supplied In Falsus component references.
+   Reference PNGs are not shipped here. Keep the image, controls and focus rings
+   outside decorative clipping; the browser's native Save Image action is intact. */
+#image-dialog {
+  --viewer-edge: #b9e9ed8a;
+  --viewer-rose: #e0b7cd65;
+  border-radius: 0;
+  border-color: #a6cdda50;
+  isolation: isolate;
+  background: linear-gradient(132deg, #1d3347f5, #111e30fa 63%, #2b2435f5);
+  box-shadow: inset 0 0 0 4px #09132255, inset 0 0 0 5px #d1e6ee12,
+    inset 1px 0 0 #b4ffff30, inset -1px 0 0 #f6aad22e, 0 24px 90px #0009;
+}
+#image-dialog::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--viewer-edge), var(--viewer-edge)) left top / 22px 1px,
+    linear-gradient(var(--viewer-edge), var(--viewer-edge)) left top / 1px 22px,
+    linear-gradient(var(--viewer-edge), var(--viewer-edge)) right top / 22px 1px,
+    linear-gradient(var(--viewer-edge), var(--viewer-edge)) right top / 1px 22px,
+    linear-gradient(var(--viewer-rose), var(--viewer-rose)) left bottom / 22px 1px,
+    linear-gradient(var(--viewer-rose), var(--viewer-rose)) left bottom / 1px 22px,
+    linear-gradient(var(--viewer-rose), var(--viewer-rose)) right bottom / 22px 1px,
+    linear-gradient(var(--viewer-rose), var(--viewer-rose)) right bottom / 1px 22px;
+  background-repeat: no-repeat;
+}
+#image-dialog .image-dialog-header {
+  position: relative;
+  flex-shrink: 0;
+  padding-top: 25px;
+  background: linear-gradient(108deg, #b4eced08, transparent 55%, #e9bddb05);
+}
+#image-dialog .image-dialog-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 26px;
+  width: min(240px, 58%);
+  height: 4px;
+  background: linear-gradient(90deg, #b8eff299, #b8eff226);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 5px) 100%, 5px 100%);
+  pointer-events: none;
+}
+#image-dialog .image-heading .section-kicker {
+  display: inline-block;
+  max-width: 100%;
+  padding: 4px 20px 4px 9px;
+  color: #b6dce3;
+  background: linear-gradient(100deg, #b2e8ed12, #b2e8ed04);
+  clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 50%, calc(100% - 9px) 100%, 0 100%);
+  overflow-wrap: anywhere;
+  letter-spacing: .1em;
+}
+#image-dialog-title { font-weight: 450; letter-spacing: -.025em; }
+#close-image {
+  position: relative;
+  border-radius: 0;
+  border-color: #a3c9da26;
+  background: linear-gradient(145deg, #b1e7ea0b, #b1e7ea03);
+  font-size: 26px;
+  font-weight: 300;
+}
+#close-image::before,
+#close-image::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: solid #bcf0f276;
+  pointer-events: none;
+}
+#close-image::before { left: 3px; top: 3px; border-width: 1px 0 0 1px; }
+#close-image::after { right: 3px; bottom: 3px; border-width: 0 1px 1px 0; }
+#image-dialog .image-toolbar {
+  flex-shrink: 0;
+  padding-bottom: 18px;
+  border-bottom-color: #b0d5e238;
+  background: linear-gradient(90deg, transparent, #b1e7ea03);
+}
+#image-dialog .image-size-controls { border-radius: 0; gap: 5px; padding: 4px; }
+#image-dialog .image-size-controls button {
+  position: relative;
+  border-radius: 0;
+  min-height: 40px;
+  padding-inline: 14px;
+}
+#image-dialog .image-size-controls button[aria-pressed="true"] {
+  background: linear-gradient(108deg, #b1e7ea1c, #b1e7ea08);
+  border-color: #b3dce545;
+  box-shadow: inset 2px 0 0 #b6e7edb3;
+}
+#image-original { padding-inline: 5px; letter-spacing: .015em; }
+#image-dialog .image-preview-stage {
+  border-inline: 6px solid transparent;
+  background-clip: padding-box;
+}
+#image-dialog .image-dialog-footer {
+  flex-shrink: 0;
+  padding-bottom: 19px;
+  border-top-color: #c7cbd02b;
+  background: linear-gradient(90deg, #b3deed05, transparent 60%, #e2bccd09);
+}
+@media (hover: hover) and (pointer: fine) {
+  #close-image:hover { border-color: #b9e9ed70; background: #b1e7ea19; }
+  #close-image:hover::before, #close-image:hover::after { border-color: #daf7f8; }
+  #image-original:hover { color: #e6f8fa; }
+}
+@media (max-width: 600px) {
+  #image-dialog { border-radius: 0; }
+  #image-dialog::before { inset: 5px; }
+  #image-dialog .image-dialog-header { padding: 20px 16px 12px; gap: 10px; }
+  #image-dialog .image-dialog-header::before { left: 16px; }
+  #image-dialog .image-heading .section-kicker { font-size: 9px; letter-spacing: .07em; }
+  #image-dialog-title { font-size: 21px; }
+  #image-dialog .image-toolbar { padding: 0 16px 12px; }
+  #image-dialog .image-size-controls button { padding-inline: 11px; }
+  #image-dialog .image-preview-stage { border-inline-width: 3px; }
+  #image-dialog .image-dialog-footer { padding: 11px 16px 16px; }
+}
+@media (max-height: 480px) {
+  #image-dialog .image-dialog-header { padding-block: 9px; }
+  #image-dialog-title { font-size: 19px; }
+  #image-dialog .image-heading .section-kicker { display: none; }
+  #image-dialog .image-toolbar { padding-bottom: 8px; }
+  #image-dialog .image-dialog-footer { padding-block: 8px; }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  #image-dialog { background: #111d2d; border-color: #91b7c7; }
+  #image-dialog .image-heading .section-kicker { color: #d1eaf0; }
+}
+@media (forced-colors: active) {
+  #image-dialog { border: 1px solid CanvasText; box-shadow: none; }
+  #image-dialog::before, #image-dialog .image-dialog-header::before,
+  #close-image::before, #close-image::after { display: none; }
+  #close-image, #image-dialog .image-size-controls button[aria-pressed="true"] { border: 1px solid CanvasText; }
+}
+@media print { #image-dialog { display: none !important; } }

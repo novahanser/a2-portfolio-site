@@ -1,0 +1,41 @@
+subject_definitions:
+<Subject 1> is the single slender feminine figure in <Picture 1> and <Picture 2>, seen from behind in the lower center-right, with long silver-white to pale-lavender hair, a dark navy-black-violet layered coat or dress, asymmetric rightward tails, and two fixed leg-to-shoe chains: a dark screen-left leg and shoe plus a pale screen-right leg and narrow high heel.
+<Subject 2> is only the small upright openwork oval metal frame behind <Subject 1>'s head and upper back in <Picture 1>, made of thin non-emissive warm-metallic rails and transparent gaps. <Picture 1> fixes its front-facing contour, internal junctions, line thickness, bounding box, placement, and occlusion. It is a passive figure-local ornament.
+<Subject 3> is the canvas-locked Gothic background plate: every facade, arch, column, rose window, distant opening, arcade, and storm cloud, with fixed source luminance, fill, opacity, orientation, and depth.
+<Subject 4> is the canvas-coordinate-locked source-image foreground paint: full-height left, hanging upper, and large upper-right white-violet 2D color regions with magenta, violet, and cyan edges.
+<Subject 5> is the wet ground, the flat dark-violet painted reflection attached beneath <Subject 1>'s feet, all debris, localized RGB channel offsets, and all remaining thin warm-metallic source line accents.
+<Picture 1> is the exact first-frame and composition anchor for [Shot 1] at 0.00 seconds.
+<Picture 2> is the exact last-frame anchor for [Shot 1] at 10.13 seconds, made from the same source image with identical 1:1 preprocessing.
+
+summary:
+[reference generation + keyframe completion] Create one uninterrupted silent 10.13-second, 1:1 painterly-anime live-wallpaper loop from <Picture 1> to <Picture 2>. Keep a static camera and preserve <Subject 1> through <Subject 5>. Wind moves only the rightward coat-tail tips above the knees and a few hair tips. The full figure, <Subject 2>, architecture, foreground paint, ground, and all other content stay registered; <Subject 2> is static by default.
+
+retention_analysis:
+<Subject 1> (throughout [Shot 1]): fully_preserved - preserve identity, position, scale, pose, anatomy, clothing, hair groups, both leg-to-shoe chains, leg gap, and occlusions; only stated coat and hair tips deform, while body and roots never follow <Subject 2>.
+<Subject 2> (throughout [Shot 1]): fully_preserved - preserve its openwork oval silhouette, bounding box, rail topology, line thickness, warm-metallic color, screen position, brightness, depth, and occlusion as a static element with dy=0 throughout.
+<Subject 3> (throughout [Shot 1]): fully_preserved - preserve landmarks, perspective, texture, depth, upper-right footprint, and every opening's fixed source luminance, dark fill, transparency/opacity, and canvas coordinates.
+<Subject 4> (throughout [Shot 1]): fully_preserved - preserve every region's coordinates, contour, width, colors, opacity, overlap, connectivity, and visible area as static source pixels.
+<Subject 5> (throughout [Shot 1]): fully_preserved - preserve the attached reflection, ground, debris, localized glitch marks, and thin warm-metallic source accents without new independent motion.
+<Picture 1> ([Shot 1] first frame): fully_preserved - begin with its exact framing, registration, geometry, exposure, colors, and motion phase.
+<Picture 2> ([Shot 1] last frame): fully_preserved - reach the same state gradually at 10.13 seconds.
+
+detailed_description:
+Preserve the painterly 2D-anime concept-art style, delicate linework, cool navy shadows, ice-white and lavender light, magenta-violet accents, thin warm-metallic source lines, and localized chromatic aberration. The central corridor and upper-right white-lilac mass stay bright while architecture and corners remain dark.
+
+[Shot 1] Begin exactly from <Picture 1>. Hold one continuous 10.13-second Static Shot. Lock camera, square crop, perspective, focus, and parallax. Keep <Subject 1> at first-frame x/y, facing away. Its body center, vertical registration, both leg-to-shoe chains, heel contacts, leg gap, roots, and hands remain fixed; shoes stay planted, and coat remains separate from the legs. <Subject 1> is independent of <Subject 2>.
+
+Keep <Subject 2> as the small openwork oval frame in <Picture 1>, a front-facing 2D shape of thin non-emissive warm-metallic rails and transparent gaps. Hold it at the same screen position with dy=0 throughout. The only acceptable deviation is uniform translation of the intact layer along screen-y within one final-output pixel of the reference position; screen-x stays fixed. Its width, height, aspect ratio, contour, rail topology, junction spacing, line thickness, brightness, depth order, and occlusions remain identical to <Picture 1>. If any invariant would change, use dy=0.
+
+A gentle screen-right wind moves only coat-tail tips right of the torso and above the knees, plus a few outer hair tips. Legs, shoes, cloth below knees, roots, attachments, and head silhouette stay fixed. Garment motion stays below 0.60% frame width and 0.35% height; hair below 0.18% width and 0.12% height. One shallow wave returns to its start.
+
+Treat <Subject 3> as a canvas-locked painted plate. Every landmark, rose window, tower, arcade, and opening keeps source coordinates, silhouette, scale, attachment, occlusion, and depth. Rose windows keep ring contour, center, diameter, orientation, opening shape, and tracery junctions. Every opening keeps <Picture 1>'s luminance, dark interior, fill/void, opacity, and visible coverage in every frame.
+
+Keep <Subject 4> as inert source-image brushstrokes fixed to canvas coordinates. Its left, upper, and upper-right white-violet regions retain identical contours, widths, colors, opacity, overlaps, connectivity, and coverage in every frame. In <Subject 5>, reflection, ground, debris, and local RGB offsets stay attached and registered. Existing warm-metallic lines remain thin, continuous, non-emissive source linework attached to their original surfaces; <Subject 2>'s lines remain its rigid openwork frame. All remain inert painted marks without independent emission or effect behavior.
+
+Lock exposure, white balance, black level, contrast, saturation, bloom, highlight boundaries, and grading. No new material, object, region, or global exposure change appears. At F242, all moving tips match F0 in position, shape, phase, and velocity; <Subject 2> is at dy=0. F242-to-F0 preserves identical registration, geometry, and brightness.
+
+overall_soundscape:
+N/A
+
+non_diegetic_music:
+N/A
