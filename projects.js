@@ -134,10 +134,10 @@ window.portfolioProjects = {
   },
   "cg2s": {
     "title": "Arcaea 7.0 story illustration",
-    "width": 1824,
-    "height": 1056,
+    "width": 3648,
+    "height": 2112,
     "number": "03",
-    "duration": "10.125 SEC",
+    "duration": "09.67 SEC",
     "status": "Archive · Accepted version",
     "category": "ILLUSTRATED / LOOP",
     "summary": "An illustrated scene developed into a short, silent loop. Restrained movement keeps the source composition readable.",
@@ -146,17 +146,17 @@ window.portfolioProjects = {
     "record": [
       "This is a historical accepted version, presented as supporting process evidence. It is separate from the two selected V2 films.",
       "The saved generation graph uses the same illustration as the first and last reference, two sampling stages and 1.5× latent upscaling.",
-      "The browser player uses an 8-bit H.264 viewing copy. The 10-bit archived file is available through Download original."
+      "The displayed video is 3648 × 2112 at 60 fps: 580 frames, lasting 9.67 seconds, with no audio. Download original provides the same file."
     ],
     "workflowNote": "This offline diagram uses English node labels to show the archived generation workflow. It is not a screenshot of a running ComfyUI session.",
     "specs": [
       [
         "Duration",
-        "10.125 seconds"
+        "9.67 seconds"
       ],
       [
         "Output",
-        "1824 × 1056 · 24 fps"
+        "3648 × 2112 · 60 fps"
       ],
       [
         "Format",
@@ -167,7 +167,7 @@ window.portfolioProjects = {
         "Accepted version"
       ],
       [
-        "Viewing copy",
+        "Encoding",
         "8-bit H.264"
       ],
       [
@@ -185,13 +185,13 @@ window.portfolioProjects = {
       {
         "time": "00:05.00",
         "title": "Restrained movement",
-        "description": "Midpoint: the trailing cloth changes shape while the main composition remains fixed.",
+        "description": "At five seconds, the trailing cloth changes shape while the main composition remains fixed.",
         "file": "frame-b.webp"
       }
     ],
     "hasApi": false,
     "original": "original.mp4",
-    "playback": "Browser viewing copy · Silent · Original available below",
+    "playback": "Final MP4 · Silent",
     "workflowPrefix": "workflow-overview",
     "badge": "ACCEPTED ARCHIVE",
     "base": "assets/projects/cg2s/",
@@ -203,7 +203,8 @@ window.portfolioProjects = {
           "#ref-cg2s"
         ]
       ]
-    }
+    },
+    "mediaVersion": "51"
   },
   "c10": {
     "title": "⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり",

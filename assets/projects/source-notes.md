@@ -8,7 +8,7 @@ This page identifies the displayed files, saved generation records and original 
 |---|---|---|---|
 | Tide in a Cup | [Video](tide/video.mp4) | 1728 × 960 / 24 fps | 8 seconds / 192 |
 | Sky Whale | [Video](whale/video.mp4) | 1728 × 960 / 24 fps | 12.25 seconds / 294 |
-| Arcaea 7.0 story illustration | [Video](cg2s/video.mp4) | 1824 × 1056 / 24 fps | 10.125 seconds / 243 |
+| Arcaea 7.0 story illustration | [Video](cg2s/video.mp4) | 3648 × 2112 / 60 fps | 9.666667 seconds / 580 |
 | ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり | [Video](c10/video.mp4) | 896 × 896 / 24 fps | 10.125 seconds / 243 |
 | Insight (Nullified) | [Video](character98/video.mp4) | 2160 × 2982 / 60 fps | 9.966667 seconds / 598 |
 | Saya (Absolution) | [Video](character97/video.mp4) | 1600 × 1600 / 24 fps | 10 seconds / 240 |
@@ -16,7 +16,7 @@ This page identifies the displayed files, saved generation records and original 
 
 Tide in a Cup and Sky Whale are the two selected V2 films and include generated environmental audio. The other five studies are silent. Arcaea 7.0 story illustration is an accepted archive study; ⊥⊬ (Sacrosanct) / Silentroom Dismantled XOR かたぎり remains a historical candidate.
 
-For the two archive studies, the player uses an 8-bit H.264 viewing copy. The 10-bit archived files remain available as [Arcaea 7.0 story illustration original](cg2s/original.mp4) and [Sacrosanct original](c10/original.mp4).
+The Arcaea 7.0 story illustration player and [original download](cg2s/original.mp4) use the same H.264 file. Sacrosanct uses an 8-bit H.264 viewing copy, with its [10-bit archived file](c10/original.mp4) available separately.
 
 ## Saved generation records
 

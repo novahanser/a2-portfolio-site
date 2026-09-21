@@ -4,9 +4,12 @@ const tabs = [...document.querySelectorAll('[data-project]')];
 const safe = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let currentProject = null;
 const player = document.getElementById('project-video');
+function projectAsset(p, file) {
+  const version=file.startsWith('workflow') ? p.workflowVersion : p.mediaVersion;
+  return p.base+file+(version ? '?v='+encodeURIComponent(version) : '');
+}
 function evidenceImage(p, file, alt, title, caption, fullFile) {
-  const revision=file.startsWith('workflow') && p.workflowVersion ? '?v='+p.workflowVersion : '';
-  return `<img src="${p.base}${file}${revision}" alt="${safe(alt)}" loading="lazy" decoding="async" data-preview-title="${safe(p.title+' · '+title)}" data-preview-caption="${safe(caption)}"${fullFile ? ` data-preview-src="${p.base}${fullFile}${revision}"` : ''}>`;
+  return `<img src="${safe(projectAsset(p,file))}" alt="${safe(alt)}" loading="lazy" decoding="async" data-preview-title="${safe(p.title+' · '+title)}" data-preview-caption="${safe(caption)}"${fullFile ? ` data-preview-src="${safe(projectAsset(p,fullFile))}"` : ''}>`;
 }
 function processMarkup(p) {
   const overview = p.workflowPrefix;
@@ -37,8 +40,8 @@ function selectProject(key, focus=false) {
   // Reserve this film's ratio before its poster and video metadata load.
   player.width=p.width;
   player.height=p.height;
-  player.poster=p.base+'poster.webp';
-  player.src=p.base+'video.mp4';
+  player.poster=projectAsset(p,'poster.webp');
+  player.src=projectAsset(p,'video.mp4');
   player.setAttribute('aria-label',p.title+' video');
   player.load();
   document.getElementById('project-panel').setAttribute('aria-labelledby',`tab-${key}`);
@@ -46,7 +49,7 @@ function selectProject(key, focus=false) {
   document.getElementById('project-media').setAttribute('aria-label',p.title+' video player');
   const fields={'frame-label':`STUDY ${p.number} / ${p.title.toUpperCase()}`,'frame-number':p.number,'media-duration':p.duration,'project-status':p.status,'project-title':p.title,'project-summary':p.summary,'process-project':p.title,'project-contribution':p.contribution,'playback-note':p.playback,'frame-status':p.badge};
   Object.entries(fields).forEach(([id,text])=>document.getElementById(id).textContent=text);
-  document.getElementById('download-video').href=p.base+p.original;
+  document.getElementById('download-video').href=projectAsset(p,p.original);
   document.getElementById('process-content').innerHTML=processMarkup(p);
   document.getElementById('video-error').hidden=true;
 }
